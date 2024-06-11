@@ -1,0 +1,73 @@
+*{
+  font-family: "Gwendolyn", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  min-width: 70vw;
+  max-width: 80vw;
+
+  margin: auto;
+}
+
+main a {
+  padding: 5vh 10vw;
+  font-size: 35px;
+  background-color: rgb(188, 141, 110);
+  color: white;
+  border: 1px solid black;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.maincta {
+  height: 50vh;
+  margin: auto;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.main_content {
+  background-color: white;
+  width: fit-content;
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.img {
+  width: 15vw;
+  min-width: 15vw;
+  height: 15vw;
+}
+
+p {
+  font-size: 4em;
+  text-decoration: none;
+  color: var(--dourado);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--dourado);
+}
+
+.maincta {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  align-items: center;
+  justify-content: center;
+}
+
