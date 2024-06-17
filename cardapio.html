@@ -18,30 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script>
-          function bolo(){
-            let bolo = document.getElementById("showbolo");
-            bolo.style.display = "block";
-            bolo.style.margin = "auto";
-            bolo.style.width = "60vw";
 
-            let pedir = document.getElementById("fazerpedido");
-            pedir.style.display = "block";
-
-          }
-            function boloedoce(){
-            let bolo = document.getElementById("showbolo");
-            bolo.style.width = "43vw";
-            bolo.style.display = "block";
-            bolo.style.margin = "10px 10px 10px 2vw"
-
-            let pedir = document.getElementById("fazerpedido");
-            pedir.style.display = "block";
-            }
-          
-
-
-    </script>
     <title>Cardápio</title>
   </head>
 
@@ -118,218 +95,202 @@
         finas afim de evitar *Desperdício*
       </p>
     </main>
-      <div class="pedido">
-        <h1>Para pedir, escolha:</h1>
-        <div class="btns">
-          <button onclick="bolo()">Bolo</button>
-          <button>Doces</button>
-          <button onclick="boloedoce()">Bolos e Doces</button>
+    <div class="pedido">
+      <h1>Para pedir, escolha:</h1>
+      <div class="btns">
+        <button onclick="bolo()">Bolo</button>
+        <button>Doces</button>
+        <button onclick="boloedoce()">Bolos e Doces</button>
       </div>
       <div class="bolo" id="showbolo">
-        <h2 class="mont">Monte seu bolo</h2>
-        <div class="container">
-          <div class="cb">
-            <div>Tamanhos</div>
-            <div>Massas</div>
-            <div>Recheios</div>
-          </div>
-          <div class="flex">
-            <div class="tamanhos">
-              <div>
-                <label for="pequeno"
-                  ><input
-                    type="radio"
-                    value="Pequeno"
-                    name="tamanho"
-                    id="pequeno"
-                  />Pequeno
-                  <p>R$ 150,00</p>
-                </label>
-              </div>
-              <div>
-                <label for="medio"
-                  ><input
-                    type="radio"
-                    value="Medio"
-                    name="tamanho"
-                    id="medio"
-                  />Médio
-                  <p>R$ 210,00</p>
-                </label>
-              </div>
-              <div>
-                <label for="grande"
-                  ><input
-                    type="radio"
-                    value="Grande"
-                    name="tamanho"
-                    id="grande"
-                  />Grande
-                  <p>R$ 260,00</p>
-                </label>
-              </div>
+        <form id="formbolo">
+          <h2 class="mont">Monte seu bolo</h2>
+          <div class="container">
+            <div class="cb">
+              <div>Tamanhos</div>
+              <div>Massas</div>
+              <div>Recheios</div>
             </div>
-            <div class="massas">
-              <div>
-                <label for="branca"
-                  ><input
-                    type="radio"
-                    value="Branca"
-                    name="massa"
-                    id="branca"
-                  />Branca</label
-                >
+            <div class="flex">
+              <div class="tamanhos">
+                <div>
+                  <label for="pequeno"
+                    ><input
+                      type="radio"
+                      value="150"
+                      name="tamanho"
+                      id="pequeno"
+                    />Pequeno
+                    <p>R$ 150,00</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="medio"
+                    ><input
+                      type="radio"
+                      value="210"
+                      name="tamanho"
+                      id="medio"
+                    />Médio
+                    <p>R$ 210,00</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="grande"
+                    ><input
+                      type="radio"
+                      value="260"
+                      name="tamanho"
+                      id="grande"
+                    />Grande
+                    <p>R$ 260,00</p>
+                  </label>
+                </div>
               </div>
-              <div>
-                <label for="cacau"
-                  ><input
-                    type="radio"
-                    value="Cacau"
-                    name="massa"
-                    id="cacau"
-                  />Cacau</label
-                >
+              <div class="massas">
+                <div>
+                  <label for="branca"
+                    ><input
+                      type="radio"
+                      name="massa"
+                      id="branca"
+                    />Branca</label
+                  >
+                </div>
+                <div>
+                  <label for="cacau"
+                    ><input type="radio" name="massa" id="cacau" />Cacau</label
+                  >
+                </div>
+                <div>
+                  <label for="redvelvet"
+                    ><input type="radio" name="massa" id="redvelvet" />Red
+                    Velvet</label
+                  >
+                </div>
+                <div>
+                  <label for="cenoura"
+                    ><input
+                      type="radio"
+                      name="massa"
+                      id="cenoura"
+                    />Cenoura</label
+                  >
+                </div>
               </div>
-              <div>
-                <label for="redvelvet"
-                  ><input
-                    type="radio"
-                    value="RedVelvet"
-                    name="massa"
-                    id="redvelvet"
-                  />Red Velvet</label
-                >
-              </div>
-              <div>
-                <label for="cenoura"
-                  ><input
-                    type="radio"
-                    value="Cenoura"
-                    name="massa"
-                    id="cenoura"
-                  />Cenoura</label
-                >
-              </div>
-            </div>
-            <div class="recheios">
-              <div>
-                <label for="aoleite"
-                  ><input
-                    type="radio"
-                    value="aoleite"
-                    name="recheio"
-                    id="aoleite"
-                  />Ao Leite</label
-                >
-              </div>
-              <div>
-                <label for="meioamargo"
-                  ><input
-                    type="radio"
-                    value="meioamargo"
-                    name="recheio"
-                    id="meioamargo"
-                  />Meio Amargo</label
-                >
-              </div>
-              <div>
-                <label for="maracuja"
-                  ><input
-                    type="radio"
-                    value="maracuja"
-                    name="recheio"
-                    id="maracuja"
-                  />Maracujá</label
-                >
-              </div>
-              <div>
-                <label for="nutella"
-                  ><input
-                    type="radio"
-                    value="nutella"
-                    name="recheio"
-                    id="nutella"
-                  />Nutella</label
-                >
-              </div>
-              <div>
-                <label for="branco"
-                  ><input
-                    type="radio"
-                    value="branco"
-                    name="recheio"
-                    id="branco"
-                  />Branco</label
-                >
-              </div>
-              <div>
-                <label for="beijinho"
-                  ><input
-                    type="radio"
-                    value="beijinho"
-                    name="recheio"
-                    id="beijinho"
-                  />Beijinho</label
-                >
-              </div>
-              <div>
-                <label for="docedeleite"
-                  ><input
-                    type="radio"
-                    value="docedeleite"
-                    name="recheio"
-                    id="docedeleite"
-                  />Doce de Leite</label
-                >
-              </div>
-              <div>
-                <label for="ninho"
-                  ><input
-                    type="radio"
-                    value="ninho"
-                    name="recheio"
-                    id="ninho"
-                  />Ninho</label
-                >
-              </div>
-              <div>
-                <label for="brigadeironozes"
-                  ><input
-                    type="radio"
-                    value="brigadeironozes"
-                    name="recheio"
-                    id="brigadeironozes"
-                  />Brigadeiro Nozes<p>P R$20,00</p>
-                  <p>M/G R$30</p></label
-                >
-        
-              </div>
-              <div>
-                <label for="geleiamorango"
-                  ><input
-                    type="radio"
-                    value="geleiamorango"
-                    name="recheio"
-                    id="geleiamorango"
-                  />Geleia de Morango<p>P R$20,00</p>
-                  <p>M/G R$30</p></label
-                >
-              </div>
-              <div>
-                <label for="geleiafrutasvermelhas"
-                  ><input
-                    type="radio"
-                    value="geleiafrutasvermelhas"
-                    name="recheio"
-                    id="geleiafrutasvermelhas"
-                  />Geleia de Frutas vermelhas<p>P R$20,00</p>
-                  <p>M/G R$30</p></label
-                >
+              <div class="recheios">
+                <div>
+                  <label for="aoleite"
+                    ><input type="radio" name="recheio" id="aoleite" />Ao
+                    Leite</label
+                  >
+                </div>
+                <div>
+                  <label for="meioamargo"
+                    ><input type="radio" name="recheio" id="meioamargo" />Meio
+                    Amargo</label
+                  >
+                </div>
+                <div>
+                  <label for="maracuja"
+                    ><input
+                      type="radio"
+                      name="recheio"
+                      id="maracuja"
+                    />Maracujá</label
+                  >
+                </div>
+                <div>
+                  <label for="nutella"
+                    ><input
+                      type="radio"
+                      name="recheio"
+                      id="nutella"
+                    />Nutella</label
+                  >
+                </div>
+                <div>
+                  <label for="branco"
+                    ><input
+                      type="radio"
+                      name="recheio"
+                      id="branco"
+                    />Branco</label
+                  >
+                </div>
+                <div>
+                  <label for="beijinho"
+                    ><input
+                      type="radio"
+                      name="recheio"
+                      id="beijinho"
+                    />Beijinho</label
+                  >
+                </div>
+                <div>
+                  <label for="docedeleite"
+                    ><input type="radio" name="recheio" id="docedeleite" />Doce
+                    de Leite</label
+                  >
+                </div>
+                <div>
+                  <label for="ninho"
+                    ><input
+                      type="radio"
+                      name="recheio"
+                      id="ninho"
+                    />Ninho</label
+                  >
+                </div>
+                <div id="exception">Recheios Premium</div>
+                <div>
+                  <label for="brigadeironozes"
+                    ><input
+                      type="radio"
+                      data-valorp="20"
+                      data-valormg="30"
+                      name="recheio"
+                      id="brigadeironozes"
+                    />Brigadeiro Nozes
+                    <p>P R$20,00</p>
+                    <p>M/G R$30</p></label
+                  >
+                </div>
+                <div>
+                  <label for="geleiamorango"
+                    ><input
+                      type="radio"
+                      data-valorp="20"
+                      data-valormg="30"
+                      name="recheio"
+                      id="geleiamorango"
+                    />Geleia de Morango
+                    <p>P R$20,00</p>
+                    <p>M/G R$30</p></label
+                  >
+                </div>
+                <div>
+                  <label for="geleiafrutasvermelhas"
+                    ><input
+                      type="radio"
+                      data-valorp="20"
+                      data-valormg="30"
+                      name="recheio"
+                      id="geleiafrutasvermelhas"
+                    />Geleia de Frutas vermelhas
+                    <p>P R$20,00</p>
+                    <p>M/G R$30</p></label
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        
+        </form>
+      </div>
+      <div class="resumo" id="resumopedido">
+        <h3>Resumo do Pedido</h3>
+        <p id="resumobolo"></p>
+        <p id="resumodoce"></p>
       </div>
       <button class="fazerpedido" id="fazerpedido">
         <a href="pedido.html">
@@ -338,9 +299,80 @@
         </a>
       </button>
     </div>
-      
-    
 
     <footer>Desenvolvido por @rizierialves</footer>
+    <script>
+      function bolo() {
+        let bolo = document.getElementById("showbolo");
+        bolo.style.display = "block";
+        bolo.style.margin = "auto";
+        bolo.style.width = "60vw";
+
+        let pedir = document.getElementById("fazerpedido");
+        pedir.style.display = "block";
+        let resumopedido = document.getElementById("resumopedido");
+        resumopedido.style.display = "block";
+      }
+      function boloedoce() {
+        let bolo = document.getElementById("showbolo");
+        bolo.style.width = "43vw";
+        bolo.style.display = "block";
+        bolo.style.margin = "10px 10px 10px 2vw";
+
+        let pedir = document.getElementById("fazerpedido");
+        pedir.style.display = "block";
+        let resumopedido = document.getElementById("resumopedido");
+        resumopedido.style.display = "block";
+      }
+
+      formbolo.addEventListener("change", function () {
+        const formbolo = document.getElementById("formbolo");
+        let soma = "";
+        let produtos = document.getElementById("resumobolo");
+        let radiostamanhos = document.querySelectorAll(
+          '#formbolo input[name="tamanho"]'
+        );
+        let radiosmassas = document.querySelectorAll(
+          '#formbolo input[name="massa"]'
+        );
+        let radiosrecheios = document.querySelectorAll(
+          '#formbolo input[name="recheio"]'
+        );
+        let tamanhoescolhido = "";
+        let massaescolhida = "";
+        let recheioescolhido = "";
+
+        for (let i = 0; i < radiostamanhos.length; i++) {
+          if (radiostamanhos[i].checked) {
+            let labeltamanho = radiostamanhos[i].parentElement;
+            tamanhoescolhido += "Bolo: " + labeltamanho.textContent;
+            soma += radiostamanhos[i].value;
+          }
+        }
+        for (let i = 0; i < radiosmassas.length; i++) {
+          if (radiosmassas[i].checked) {
+            let labelmassas = radiosmassas[i].parentElement;
+            massaescolhida += "Massa: " + labelmassas.textContent;
+          }
+        }
+        for (let i = 0; i < radiosrecheios.length; i++) {
+          if (radiosrecheios[i].checked) {
+            let valorrecheio = 0;
+            let labelrecheio = radiosrecheios[i].parentElement;
+            recheioescolhido += "Recheio: " + labelrecheio.textContent;
+
+            if(some(radiostamanhos.checked)){
+              if(soma < input[id="medio"].value &&radiosrecheios[i].checked){
+                soma+= radiosrecheios[i].getAttribute("data-tamanhop")
+              }
+              soma+= radiosrecheios[i].getAttribute("data-tamanhop")
+            }
+            }
+          }
+        
+
+        produtos.innerHTML = `<p>${tamanhoescolhido}</p> <p>${massaescolhida}</p> <p>${recheioescolhido}<h3> Valor do Pedido: R$${soma}</h3>`;
+      });
+    </script>
   </body>
 </html>

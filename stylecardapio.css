@@ -199,7 +199,7 @@ input[type="radio"] {
 .tamanhos div:hover,
 .massas div:hover {
   background-color: var(--dourado);
-  border: dashed 5px var(--principal);
+  outline: dashed 5px var(--principal);
 }
 
 .recheios div input,
@@ -214,7 +214,7 @@ input[type="radio"] {
 
 label:has(input[type="radio"]:checked) {
   background-color: var(--dourado);
-  border: dashed 5px var(--principal);
+  outline: dashed 5px var(--principal);
 }
 
 label {
@@ -266,4 +266,19 @@ button {
 
 h1{
   margin-top: 0;
+}
+
+#exception{
+  color: white;
+  background-color: brown;
+}
+
+#exception:hover{
+  background-color: brown;
+  color: white;
+  outline: none;
+}
+
+#resumopedido{
+  display: none;
 }
