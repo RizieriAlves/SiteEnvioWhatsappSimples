@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+:root{
+  --redvelvet: #800000
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -61,12 +63,12 @@ h3 {
 }
 
 .tamanho {
-  font-size: 70px;
+  font-size: 50px;
   font-style: bolder;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: var(--dourado);
   padding: 1.5vw;
-  border: 1px solid var(--dourado);
+  outline: 1px solid var(--dourado);
   border-radius: 15px;
   text-align: center;
 }
@@ -148,21 +150,22 @@ input[type="radio"] {
 
 .cb {
   display: flex;
+  max-width: 100%;
 }
 .cb div {
-  padding: 20px;
-  width: 100%;
+  padding: 0.5vw;
+  width: 25%;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   border: 1px solid;
 }
 
 .tamanhos div {
-  width: 100%;
+  width: 25%;
   box-sizing: border-box;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
-  border: 1px solid burlywood;
+  outline: 1px solid burlywood;
   display: flex;
   flex-direction: column;
 }
@@ -173,48 +176,57 @@ input[type="radio"] {
 
 .recheios,
 .tamanhos,
-.massas {
+.massas, .coberturas {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 25%;
+  font-size: 25px;
   justify-content: space-evenly;
   box-sizing: border-box;
 }
 
 .recheios div,
 .tamanhos div,
-.massas div {
+.massas div, .coberturas div {
   text-align: center;
-  outline: 1px solid;
+  border: 1px solid;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 25px;
+}
+
+.bolo{
+  border-radius: 10px;
+  border: 1px solid;
 }
 
 .recheios div:hover,
 .tamanhos div:hover,
-.massas div:hover {
+.massas div:hover , .coberturas div:hover{
   background-color: var(--dourado);
-  outline: dashed 5px var(--principal);
+  border: dashed 5px var(--redvelvet);
 }
 
 .recheios div input,
 .tamanhos div input,
-.massas div input {
-  padding: 40px;
+.massas div input, .coberturas div input{
+  padding: 2vw;
 }
 .recheios div,
-.massas div {
-  font-size: 40px;
+.massas div, .coberturas div{
+ 
+  font-size: 25px;
 }
 
 label:has(input[type="radio"]:checked) {
   background-color: var(--dourado);
-  outline: dashed 5px var(--principal);
+  outline: dashed 5px var(--redvelvet);
+  outline-offset: -3px;
 }
 
 label {
@@ -260,7 +272,7 @@ button {
   margin-bottom: 4vh;
 }
 
-.bolo {
+.bolo, .doce {
   display: none;
 }
 
@@ -276,9 +288,30 @@ h1{
 #exception:hover{
   background-color: brown;
   color: white;
-  outline: none;
+  border: none;
 }
 
 #resumopedido{
   display: none;
 }
+.flex{
+  display: flex;
+}
+
+#showdoce{
+  display: none;
+}
+
+form{
+  max-width: 100%;
+}
+
+.doce{
+    border-radius: 10px;
+    border: 1px solid;
+  }
+
+  .title, .cb{
+    background-color: var(--redvelvet);
+    color: white;
+  }
