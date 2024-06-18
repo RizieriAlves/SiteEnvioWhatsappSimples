@@ -1,493 +1,531 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylebase.css" />
-    <link rel="stylesheet" href="stylecardapio.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylebase.css" />
+  <link rel="stylesheet" href="stylecardapio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet" />
 
-    <title>Cardápio</title>
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <header>
-      <img src="/images/leve-me escuro.png" alt="logo.png" class="logo" />
-      <ul>
-        <a href="cardapio.html">
-          <li>Cardápio</li>
-        </a>
-        <a href="contato.html">
-          <li>Contato</li>
-        </a>
-        <a href="feedbacks.html">
-          <li>Feedbacks</li>
-        </a>
-      </ul>
-    </header>
+  <title>Cardápio</title>
+</head>
 
-    <main>
-      <h1>Bolos</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Tamanhos</th>
-            <th>Fatias</th>
-            <th>Valor a partir</th>
-          </tr>
-        </thead>
+<body>
+  <header>
+    <img src="/images/leve-me escuro.png" alt="logo.png" class="logo" />
+    <ul>
+      <a href="cardapio.html">
+        <li>Cardápio</li>
+      </a>
+      <a href="contato.html">
+        <li>Contato</li>
+      </a>
+      <a href="feedbacks.html">
+        <li>Feedbacks</li>
+      </a>
+    </ul>
+  </header>
+
+  <main>
+    <h1>Bolos</h1>
+    <table>
+      <thead>
         <tr>
-          <td>Pequeno - Aro 15cm</td>
-          <td>15</td>
-          <td>R$ 150,00</td>
+          <th>Tamanhos</th>
+          <th>Fatias</th>
+          <th>Valor a partir</th>
         </tr>
-        <tr>
-          <td>Médio - Aro 19cm</td>
-          <td>19</td>
-          <td>R$ 210,00</td>
-        </tr>
-        <tr>
-          <td>Grande - Aro 22cm</td>
-          <td>22</td>
-          <td>R$ 260,00</td>
-        </tr>
-      </table>
+      </thead>
+      <tr>
+        <td>Pequeno - Aro 15cm</td>
+        <td>15</td>
+        <td>R$ 150,00</td>
+      </tr>
+      <tr>
+        <td>Médio - Aro 19cm</td>
+        <td>19</td>
+        <td>R$ 210,00</td>
+      </tr>
+      <tr>
+        <td>Grande - Aro 22cm</td>
+        <td>22</td>
+        <td>R$ 260,00</td>
+      </tr>
+    </table>
 
-      <h3>Meus tamanhos de bolo e para quantas pessoas indico</h3>
-      <div class="indicacao">
-        <div class="tamanho">
-          <span>P</span>
-          <p>+/- 1.5kg a 2kg</p>
-          <p>10 Pessoas</p>
-        </div>
-
-        <div class="tamanho">
-          <span>M</span>
-          <p>+/- 2.5kg a 3kg</p>
-          <p>20 pessoas</p>
-        </div>
-
-        <div class="tamanho">
-          <span>G</span>
-          <p>+/- 3.5kg a 4kg</p>
-          <p>30 pessoas</p>
-        </div>
+    <h3>Meus tamanhos de bolo e para quantas pessoas indico</h3>
+    <div class="indicacao">
+      <div class="tamanho">
+        <span>P</span>
+        <p>+/- 1.5kg a 2kg</p>
+        <p>10 Pessoas</p>
       </div>
-      <h4>
-        O peso varia de acordo com a decoração, cobertura e recheios escolhidos.
-      </h4>
-      <p>
-        É possível servir para maior número de pessoas, dependendo de quem corta
-        as fatias. Para maior rendimento indico cortar o bolo exatamente como se
-        fosse retangular ou quadrado e por ser alto, pode-se tirar fatias mais
-        finas afim de evitar *Desperdício*
-      </p>
-    </main>
-    <div class="pedido">
-      <h1>Para pedir, escolha:</h1>
-      <div class="btns">
-        <button onclick="bolo()">Bolo</button>
-        <button onclick="doce()">Doces</button>
-        <button onclick="boloedoce()">Bolos e Doces</button>
-      </div>
-      <div class="flex">
-        <div class="bolo" id="showbolo">
-          <form id="formbolo">
-            <h2 class="mont">Monte seu bolo</h2>
-            <div class="container">
-              <div class="cb" id="cabecalho">
-                <div>Tamanhos</div>
-                <div>Massas</div>
-                <div>Recheios</div>
-                <div>Coberturas</div>
-              </div>
-              <div class="flex">
-                <div class="tamanhos">
-                  <div>
-                    <label for="pequeno"
-                      ><input
-                        type="radio"
-                        value="150"
-                        name="tamanho"
-                        id="pequeno"
-                      />Pequeno
-                      <p>R$ 150,00</p>
-                    </label>
-                  </div>
-                  <div>
-                    <label for="medio"
-                      ><input
-                        type="radio"
-                        value="210"
-                        name="tamanho"
-                        id="medio"
-                      />Médio
-                      <p>R$ 210,00</p>
-                    </label>
-                  </div>
-                  <div>
-                    <label for="grande"
-                      ><input
-                        type="radio"
-                        value="260"
-                        name="tamanho"
-                        id="grande"
-                      />Grande
-                      <p>R$ 260,00</p>
-                    </label>
-                  </div>
-                </div>
-                <div class="massas">
-                  <div>
-                    <label for="branca"
-                      ><input
-                        type="radio"
-                        name="massa"
-                        id="branca"
-                      />Branca</label
-                    >
-                  </div>
-                  <div>
-                    <label for="cacau"
-                      ><input type="radio" name="massa" id="cacau" />Cacau</label
-                    >
-                  </div>
-                  <div>
-                    <label for="redvelvet"
-                      ><input type="radio" name="massa" id="redvelvet" />Red
-                      Velvet</label
-                    >
-                  </div>
-                  <div>
-                    <label for="cenoura"
-                      ><input
-                        type="radio"
-                        name="massa"
-                        id="cenoura"
-                      />Cenoura</label
-                    >
-                  </div>
-                </div>
-                <div class="recheios">
-                  <div>
-                    <label for="aoleite"
-                      ><input type="radio" name="recheio" data-valorp="0"
-                      data-valormg="0" id="aoleite" />Ao
-                      Leite</label
-                    >
-                  </div>
-                  <div>
-                    <label for="meioamargo"
-                      ><input type="radio" name="recheio"  data-valorp="0"
-                      data-valormg="0" id="meioamargo" />Meio
-                      Amargo</label
-                    >
-                  </div>
-                  <div>
-                    <label for="maracuja"
-                      ><input
-                        type="radio"
-                        name="recheio"
-                        data-valorp="0"
-                        data-valormg="0"
-                        id="maracuja"
-                      />Maracujá</label
-                    >
-                  </div>
-                  <div>
-                    <label for="nutella"
-                      ><input
-                        type="radio"
-                        name="recheio"
-                        data-valorp="0"
-                        data-valormg="0"
-                        id="nutella"
-                      />Nutella</label
-                    >
-                  </div>
-                  <div>
-                    <label for="branco"
-                      ><input
-                        type="radio"
-                        name="recheio"
-                        data-valorp="0"
-                        data-valormg="0"
-                        id="branco"
-                      />Branco</label
-                    >
-                  </div>
-                  <div>
-                    <label for="beijinho"
-                      ><input
-                        type="radio"
-                        name="recheio"
-                        data-valorp="0"
-                        data-valormg="0"
-                        id="beijinho"
-                      />Beijinho</label
-                    >
-                  </div>
-                  <div>
-                    <label for="docedeleite"
-                      ><input type="radio" name="recheio" id="docedeleite" />Doce
-                      de Leite</label
-                    >
-                  </div>
-                  <div>
-                    <label for="ninho"
-                      ><input
-                        type="radio"
-                        name="recheio"
-                        data-valorp="0"
-                        data-valormg="0"
-                        id="ninho"
-                      />Ninho</label
-                    >
-                  </div>
-                  <div id="exception">Recheios Premium</div>
-                  <div>
-                    <label for="brigadeironozes"
-                      ><input
-                        type="radio"
-                        data-valorp="20"
-                        data-valormg="30"
-                        name="recheio"
-                        id="brigadeironozes"
-                      />Brigadeiro Nozes
-                      <p>P R$20,00</p>
-                      <p>M/G R$30</p></label
-                    >
-                  </div>
-                  <div>
-                    <label for="geleiamorango"
-                      ><input
-                        type="radio"
-                        data-valorp="20"
-                        data-valormg="30"
-                        name="recheio"
-                        id="geleiamorango"
-                      />Geleia de Morango
-                      <p>P R$20,00</p>
-                      <p>M/G R$30</p></label
-                    >
-                  </div>
-                  <div>
-                    <label for="geleiafrutasvermelhas"
-                      ><input
-                        type="radio"
-                        data-valorp="20"
-                        data-valormg="30"
-                        name="recheio"
-                        id="geleiafrutasvermelhas"
-                      />Geleia de Frutas vermelhas
-                      <p>P R$20,00</p>
-                      <p>M/G R$30</p></label
-                    >
-                  </div>
-                </div>
-                <div class="coberturas">
-                  <div>
-                    <label for="cobertura"
-                      ><input
-                        type="radio"
-                        value="0"
-                        name="cobertura"
-                        id="cobertura"
-                      />
-                      <p>Cobertura</p>
-                    </label>
-                  </div>
-                  <div>
-                    <label for="ganache"
-                      ><input
-                        type="radio"
-                        value="0"
-                        name="cobertura"
-                        id="ganache"
-                      />
-                      <p>Ganache</p>
-                    </label>
-                  </div>
-                  <div>
-                    <label for="chantininho"
-                      ><input
-                        type="radio"
-                        value="0"
-                        name="cobertura"
-                        id="chantininho"
-                      />
-                      <p>Chantininho</p>
-                    </label>
-                  </div>
-                  <div>
-                    <label for="brigadeiro"
-                      ><input
-                        type="radio"
-                        value="0"
-                        name="cobertura"
-                        id="brigadeiro"
-                      />
-                      <p>Brigadeiro</p>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="doce" id="showdoce">
-          <h2 class="mont title">Brigadeiro</h2>
-            <div class="container">
-              <div>
-                
 
-
-              </div>
-            </div>
-        <div>
-          <form action="" class="formdoce">
-
-          </form>
-        </div>
-        </div>
+      <div class="tamanho">
+        <span>M</span>
+        <p>+/- 2.5kg a 3kg</p>
+        <p>20 pessoas</p>
       </div>
-      <div class="resumo" id="resumopedido">
-        <h3>Resumo do Pedido</h3>
-        <p id="resumobolo"></p>
-        <p id="resumodoce"></p>
+
+      <div class="tamanho">
+        <span>G</span>
+        <p>+/- 3.5kg a 4kg</p>
+        <p>30 pessoas</p>
       </div>
-      <button class="fazerpedido" id="fazerpedido">
-        <a href="pedido.html">
-          <img src="images/leve-me escuro.png" alt="" class="imgbtn" />
-          <p>Fazer pedido</p>
-        </a>
-      </button>
     </div>
+    <h4 class="destaque">
+      O peso varia de acordo com a decoração, cobertura e recheios escolhidos.
+    </h4>
+    <p>
+      É possível servir para maior número de pessoas, dependendo de quem corta
+      as fatias. Para maior rendimento indico cortar o bolo exatamente como se
+      fosse retangular ou quadrado e por ser alto, pode-se tirar fatias mais
+      finas afim de evitar *Desperdício*
+    </p>
+  </main>
+  <div class="pedido">
+    <h1>Fazer pedido</h1>
+    <div class="btns">
+      <button onclick="bolo()">Bolo</button>
+      <button onclick="doce()">Doces</button>
+      <button onclick="boloedoce()">Bolos e Doces</button>
+    </div>
+    <div class="containerform">
+      <div class="bolo" id="showbolo">
+        <form id="formbolo">
+          <h2 class="mont title">Monte seu bolo</h2>
+          <div class="container">
+            <div class="cb" id="cabecalho">
+              <div>Tamanhos</div>
+              <div>Massas</div>
+              <div>Recheios</div>
+              <div>Coberturas</div>
+            </div>
+            <div class="flex">
+              <div class="tamanhos">
+                <div>
+                  <label for="Pequeno"><input type="radio" value="150" name="tamanho" id="Pequeno" />Pequeno
+                    <p>R$ 150,00</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Médio"><input type="radio" value="210" name="tamanho" id="Médio" />Médio
+                    <p>R$ 210,00</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Grande"><input type="radio" value="260" name="tamanho" id="Grande" />Grande
+                    <p>R$ 260,00</p>
+                  </label>
+                </div>
+              </div>
+              <div class="massas">
+                <div>
+                  <label for="Branca"><input type="radio" name="massa" id="Branca" />Branca</label>
+                </div>
+                <div>
+                  <label for="Cacau"><input type="radio" name="massa" id="Cacau" />Cacau</label>
+                </div>
+                <div>
+                  <label for="Red Velvet"><input type="radio" name="massa" id="Red Velvet" />Red
+                    Velvet</label>
+                </div>
+                <div>
+                  <label for="Cenoura"><input type="radio" name="massa" id="Cenoura" />Cenoura</label>
+                </div>
+              </div>
+              <div class="recheios">
+                <div>
+                  <label for="Ao leite"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Ao leite" />Ao Leite</label>
+                </div>
+                <div>
+                  <label for="Meio Amargo"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Meio Amargo" />Meio Amargo</label>
+                </div>
+                <div>
+                  <label for="Maracuja"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Maracuja" />Maracujá</label>
+                </div>
+                <div>
+                  <label for="Nutella"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Nutella" />Nutella</label>
+                </div>
+                <div>
+                  <label for="Branco"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Branco" />Branco</label>
+                </div>
+                <div>
+                  <label for="Beijinho"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Beijinho" />Beijinho</label>
+                </div>
+                <div>
+                  <label for="Doce de Leite"><input type="radio" name="recheio" id="Doce de Leite" />Doce de Leite</label>
+                </div>
+                <div>
+                  <label for="Ninho"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Ninho" />Ninho</label>
+                </div>
+                <div id="exception">Recheios Premium</div>
+                <div>
+                  <label for="Brigadeiro Nozes"><input type="radio" data-valorp="20" data-valormg="30" name="recheio"
+                      id="Brigadeiro Nozes" />Brigadeiro Nozes
+                    <p>P R$20,00</p>
+                    <p>M/G R$30</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Geleia de Morango"><input type="radio" data-valorp="20" data-valormg="30" name="recheio"
+                      id="Geleia de Morango" />Geleia de Morango
+                    <p>P R$20,00</p>
+                    <p>M/G R$30</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Geleia de Frutas Vermelhas"><input type="radio" data-valorp="20" data-valormg="30"
+                      name="recheio" id="Geleia de Frutas Vermelhas" />Geleia de Frutas vermelhas
+                    <p>P R$20,00</p>
+                    <p>M/G R$30</p>
+                  </label>
+                </div>
+              </div>
+              <div class="coberturas">
+                <div>
+                  <label for="Cobertura"><input type="radio" value="0" name="cobertura" id="Cobertura" />
+                    <p>Cobertura</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Ganache"><input type="radio" value="0" name="cobertura" id="Ganache" />
+                    <p>Ganache</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Chantininho"><input type="radio" value="0" name="cobertura" id="Chantininho" />
+                    <p>Chantininho</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Brigadeiro"><input type="radio" value="0" name="cobertura" id="Brigadeiro" />
+                    <p>Brigadeiro</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="doce" id="showdoce">
+        <form id="formdoce">
+          <h2 class="mont title ">Brigadeiro</h2>
 
-    <footer>Desenvolvido por @rizierialves</footer>
-    <script>
-      function bolo() {
-        let bolo = document.getElementById("showbolo");
-        bolo.style.display = "block";
-        bolo.style.margin = "auto";
-        bolo.style.width = "60vw";
+          <h3 class="title outline">Tradicionais</h3>
+          <div class="cbdoces">
+            <div>
+              <h3 class="title outline" style="font-size: 20px;  ">Sabores</h3>
+            </div>
+            <div>
+              <h3 class="title outline" style="font-size: 20px; ">Quantidade</h3>
+            </div>
+          </div>
+          <div class="flexcolumn">
+            <div class="flexrow">
+              <div class="doces">
+                <div><label for="docebeijinho"><input type="radio" value="0" name="sabortradicional"
+                      id="docebeijinho" />
+                    <p>Beijinho</p>
+                </div>
+                <div><label for="Morango"><input type="radio" value="0" name="sabortradicional" id="Morango" /> <p>Morango</p>
+                </div>
+                <div><label for="doceninho"><input type="radio" value="0" name="sabortradicional" id="doceninho" />
+                    <p>Ninho</p>
+                </div>
+                <div><label for="tradicional"><input type="radio" value="0" name="sabortradicional" id="tradicional" />
+                    <p>Tradicional</p>
+                </div>
+              </div>
+              <div class="doces">
+                <div><label for="und25"><input type="radio" value="65" name="qtdtradicional" id="und25" /> 25 Unidades
+                    <p>R$ 65,00</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="und50"><input type="radio" value="130" name="qtdtradicional" id="und50" /> 50 Unidades
+                    <p>R$ 130,00</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="und100"><input type="radio" value="260" name="qtdtradicional" id="und100" /> 100 Unidades
+                    <p>R$ 260,00</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <h3 class="title outline" style="font-size: 20px;">Sabores Premium</h3>
+            <div class="flexrow">
+              <div class="doces">
+                <div><label for="ninho_nutella"><input type="radio" value="0" name="saborpremium" id="ninho_nutella" />
+                    <p>Ninho com Nutella</p></label></div>
+                <div><label for="morango_nutella"><input type="radio" value="0" name="saborpremium"
+                      id="morango_nutella" />
+                    <p>Morango com Nutella</p></label></div>
+                <div><label for="meio_amargo"><input type="radio" value="0" name="saborpremium" id="meio_amargo" /> <p>
+                  Meio
+                      Amargo
+                </p></label></div>
+                <div><label for="brancoespecial"><input type="radio" value="0" name="saborpremium"
+                      id="brancoespecial" /> <p>Branco</p></label>
+                </div>
+                <div><label for="cafe_cream_cheese"><input type="radio" value="0" name="saborpremium"
+                      id="cafe_cream_cheese" />
+                    <p>Café com Cream Cheese</p></label></div>
+                <div><label for="churros"><input type="radio" value="0" name="saborpremium" id="churros" />
+                    <p>Churros</p></label></div>
+                <div><label for="camafeu"><input type="radio" value="0" name="saborpremium" id="camafeu" />
+                    <p>Camafeu</p></label></div>
+              </div>
+              <div class="doces">
+                <div><label for="und25especial"><input type="radio" value="87" name="qtdespecial" id="und25especial" />
+                    25 Unidades
+                    <p>R$ 87,00</p>
+                  </label>
+                </div>
+                <div><label for="und50especial"><input type="radio" value="175" name="qtdespecial" id="und50especial" />
+                    50 Unidades
+                    <p>R$ 175,00</p>
+                  </label>
+                </div>
+                <div><label for="und100especial"><input type="radio" value="350" name="qtdespecial"
+                      id="und100especial" /> 100 Unidades
+                    <p>R$ 350,00</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        let pedir = document.getElementById("fazerpedido");
-        pedir.style.display = "block";
-        let resumopedido = document.getElementById("resumopedido");
-        resumopedido.style.display = "block";
+      </div>
+      </form>
+    </div>
+  </div>
+  <div class="resumo" id="resumopedido">
+    <h3>Resumo do Pedido</h3>
+    <div class="flexresumo">
+      <div id="css_bolo_resumo">
+        <div class="cssresumo">
+          <p><img src="images/cake.png" class="icon"></p>
+          <div id="resumobolo"></div>
+        </div>
+      </div>
+
+
+      <div id="css_doce_resumo">
+        <div>
+          <div class="cssresumo">
+            <p><img src="images/docinho.png" class="icon"></p>
+            <div id="resumodoce"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="fazerpedido" id="fazerpedido">
+      <a href="pedido.html">
+        <img src="images/leve-me escuro.png" alt="" class="imgbtn" />
+        <p>Fazer pedido</p>
+      </a>
+    </button>
+  </div>
+
+
+  <footer>Desenvolvido por @rizierialves
+    <p><a href="https://www.flaticon.com/free-icons/" title="cake icons">Get Icons</a></p>
+  </footer>
+
+  <script>
+    let soma= 0
+    
+    function bolo() {
+      let bolo = document.getElementById("showbolo");
+      bolo.style.display = "block";
+      bolo.style.margin = "auto";
+      bolo.style.width = "60vw";
+
+      let doce = document.getElementById("showdoce");
+      doce.style.display = "none";
+
+      let pedir = document.getElementById("fazerpedido");
+      pedir.style.display = "block";
+      let resumopedido = document.getElementById("resumopedido");
+      resumopedido.style.display = "block";
+      let resumodoce = document.getElementById("css_doce_resumo")
+      resumodoce.style.display = "none"
+      
+    }
+    function boloedoce() {
+
+      let bolo = document.getElementById("showbolo");
+      bolo.style.width = "46vw";
+      bolo.style.display = "block";
+      bolo.style.margin = "10px 10px 10px 2vw";
+
+      let doce = document.getElementById("showdoce");
+      doce.style.width = "46vw";
+      doce.style.display = "block";
+      doce.style.margin = "10px 10px 10px 2vw";
+
+      let pedir = document.getElementById("fazerpedido");
+      pedir.style.display = "block";
+
+      let resumopedido = document.getElementById("resumopedido");
+      resumopedido.style.display = "block";
+    }
+
+    function doce() {
+      let doce = document.getElementById("showdoce");
+      doce.style.display = "block";
+      doce.style.margin = "auto";
+      doce.style.width = "60vw";
+
+      let bolo = document.getElementById("showbolo");
+      bolo.style.display = "none";
+
+      let pedir = document.getElementById("fazerpedido");
+      pedir.style.display = "block";
+
+      let resumopedido = document.getElementById("resumopedido");
+      resumopedido.style.display = "block";
+
+      let resumobolo = document.getElementById("css_bolo_resumo")
+      resumobolo.style.display = "none"
+    }
+    const formbolo = document.getElementById("formbolo");
+    formbolo.addEventListener("change", function () {
+     
+      let resumo_bolo = document.getElementById("resumobolo");
+      let radiostamanhos = document.querySelectorAll(
+        '#formbolo input[name="tamanho"]'
+      );
+      let radiosmassas = document.querySelectorAll(
+        '#formbolo input[name="massa"]'
+      );
+      let radiosrecheios = document.querySelectorAll(
+        '#formbolo input[name="recheio"]'
+      );
+      let radioscoberturas = document.querySelectorAll(
+        '#formbolo input[name="cobertura"]'
+      );
+      let tamanhoescolhido = "";
+      let massaescolhida = "";
+      let recheioescolhido = "";
+      let tamanho = 0;
+      let coberturaescolhida = "";
+     let soma_bolo = 0
+      for (let i = 0; i < radiostamanhos.length; i++) {
+        if (radiostamanhos[i].checked) {
+          let labeltamanho = radiostamanhos[i].id;
+          tamanhoescolhido += "Tamanho " + labeltamanho.textContent;
+          soma_bolo += parseInt(radiostamanhos[i].value);
+          if (radiostamanhos[i].getAttribute("id") == "pequeno") {
+            tamanho = 1;
+          }
+          if (
+            radiostamanhos[i].getAttribute("id") == "medio" ||
+            radiostamanhos[i].getAttribute("id") == "grande"
+          ) {
+            tamanho = 2;
+          }
+        }
       }
-      function boloedoce() {
-        let bolo = document.getElementById("showbolo");
-        
-        bolo.style.width = "46vw";
-        bolo.style.display = "block";
-        bolo.style.margin = "10px 10px 10px 2vw";
-
-
-        let doce = document.getElementById("showdoce");
-        doce.style.width = "46vw";
-        doce.style.display = "block";
-        doce.style.margin = "10px 10px 10px 2vw";
-
-        let pedir = document.getElementById("fazerpedido");
-        pedir.style.display = "block";
-        let resumopedido = document.getElementById("resumopedido");
-        resumopedido.style.display = "block";
-
-        let tamanhotamanho = document.getElementById()
+      for (let i = 0; i < radiosmassas.length; i++) {
+        if (radiosmassas[i].checked) {
+          let labelmassas = radiosmassas[i].id;
+          massaescolhida += "Massa de " + labelmassas.textContent;
+        }
       }
-
-      function doce(){
-        let doce = document.getElementById("showdoce");
-        doce.style.display = "block";
-        doce.style.margin = "auto";
-        doce.style.width = "60vw";
-
-        let bolo = document.getElementById("showbolo");
-        bolo.style.display="none";
-
-        let pedir = document.getElementById("fazerpedido");
-        pedir.style.display = "block";
-        let resumopedido = document.getElementById("resumopedido");
-        resumopedido.style.display = "block";
+      for (let i = 0; i < radioscoberturas.length; i++) {
+        if (radioscoberturas[i].checked) {
+          let labelcoberturas = radioscoberturas[i].id;
+          coberturaescolhida += "Cobertura de " + labelcoberturas.textContent;
+        }
       }
+      for (let i = 0; i < radiosrecheios.length; i++) {
+        if (radiosrecheios[i].checked) {
+          let valorrecheio = 0;
+          let labelrecheio = radiosrecheios[i].id;
+          recheioescolhido += "Recheio de " + labelrecheio.textContent;
 
-      formbolo.addEventListener("change", function () {
-        const formbolo = document.getElementById("formbolo");
-        let soma = 0;
-        let produtos = document.getElementById("resumobolo");
-        let radiostamanhos = document.querySelectorAll(
-          '#formbolo input[name="tamanho"]'
-        );
-        let radiosmassas = document.querySelectorAll(
-          '#formbolo input[name="massa"]'
-        );
-        let radiosrecheios = document.querySelectorAll(
-          '#formbolo input[name="recheio"]'
-        );
-        let radioscoberturas = document.querySelectorAll(
-          '#formbolo input[name="cobertura"]'
-        );
-        let tamanhoescolhido = "";
-        let massaescolhida = "";
-        let recheioescolhido = "";
-        let tamanho = 0
-        let coberturaescolhida= "";
-
-        for (let i = 0; i < radiostamanhos.length; i++) {
-          if (radiostamanhos[i].checked) {
-            let labeltamanho = radiostamanhos[i].parentElement;
-            tamanhoescolhido += "Bolo: " + labeltamanho.textContent;
-            soma += parseInt(radiostamanhos[i].value);
-            if(radiostamanhos[i].getAttribute("id") == "pequeno"){
-              tamanho=1;
-            }
-            if(radiostamanhos[i].getAttribute("id") == "medio" || radiostamanhos[i].getAttribute("id") == "grande"){
-              tamanho=2;
-            }
+          if (tamanho == 1) {
+            soma_bolo += parseInt(radiosrecheios[i].getAttribute("data-valorp"));
+          }
+          if (tamanho == 2) {
+            soma_bolo += parseInt(radiosrecheios[i].getAttribute("data-valormg"));
           }
         }
-        for (let i = 0; i < radiosmassas.length; i++) {
-          if (radiosmassas[i].checked) {
-            let labelmassas = radiosmassas[i].parentElement;
-            massaescolhida += "Massa: " + labelmassas.textContent;
-          }
-        }
-        for (let i = 0; i < radioscoberturas.length; i++) {
-          if (radioscoberturas[i].checked) {
-            let labelcoberturas = radioscoberturas[i].parentElement;
-            coberturaescolhida += "Cobertura: " + labelcoberturas.textContent;
-          }
-        }
-        for (let i = 0; i < radiosrecheios.length; i++) {
-          if (radiosrecheios[i].checked) {
-            let valorrecheio = 0;
-            let labelrecheio = radiosrecheios[i].parentElement;
-            recheioescolhido += "Recheio: " + labelrecheio.textContent;
+      }
+      let cssbolo = document.getElementById("css_bolo_resumo")
+      cssbolo.style.display = "block"
+      resumo_bolo.innerHTML = `<p>${tamanhoescolhido}</p> <p>${massaescolhida}</p> <p>${recheioescolhido}</p> <p> ${coberturaescolhida} <h3> Valor do Bolo: R$${soma_bolo}</h3>`;
+    });
 
-            if (tamanho == 1) {
-                soma += parseInt(radiosrecheios[i].getAttribute("data-valorp"));
-            } if(tamanho == 2){
-              soma += parseInt(radiosrecheios[i].getAttribute("data-valormg"));
-            } 
-          }
+      formdoce.addEventListener("change", function () {
+      const formdoce = document.getElementById("formdoce");
+      let cssdoce = document.getElementById("css_doce_resumo")
+      let resumo_doce = document.getElementById("resumodoce")
+      let radiossaborestrad = document.querySelectorAll(
+        '#formdoce input[name="sabortradicional"]'
+      );
+      let radiosqtdtrad = document.querySelectorAll(
+        '#formdoce input[name="qtdtradicional"]'
+      );
+      let radiossaborespremium  = document.querySelectorAll(
+        '#formdoce input[name="saborpremium"]'
+      );
+      let radiosqtdpremium = document.querySelectorAll(
+        '#formdoce input[name="qtdespecial"]'
+      );
+      let sabortradicional = "";
+      let qtdtradicional = "";
+      let saborpremium = "";
+      let qtdpremium = "";
+      let soma_doce = 0;
+      for (let i = 0; i < radiossaborestrad.length; i++) {
+        if (radiossaborestrad[i].checked) {
+          let labelsabortrad = radiossaborestrad[i].parentElement;
+          sabortradicional = "Sabor tradicional: " + labelsabortrad.textContent;
         }
+      }
+      for (let i = 0; i < radiosqtdtrad.length; i++) {
+        if (radiosqtdtrad[i].checked) {
+          let labelqtdtrad = radiosqtdtrad[i].parentElement;
+          qtdtradicional += "Quantidade Tradicional: " + labelqtdtrad.textContent;
+          soma_doce += parseInt(radiosqtdtrad[i].value);   
+        }
+      }
+      for (let i = 0; i < radiossaborespremium.length; i++) {
+        if (radiossaborespremium[i].checked) {
+          let labelsaborpremium = radiossaborespremium[i].parentElement;
+          saborpremium += "Sabor Premium: " + labelsaborpremium.textContent;
+        }
+      }
+      for (let i = 0; i < radiosqtdpremium.length; i++) {
+        if (radiosqtdpremium[i].checked) {
+          let labelqtdpremium = radiosqtdpremium[i].parentElement;
+          qtdpremium = "Quantidade Premium: " + labelqtdpremium.textContent;
+          soma_doce += parseInt(radiosqtdpremium[i].value);   
+        }
+      }
+      cssdoce.style.display = "block"
+      resumo_doce.innerHTML = `<p>${sabortradicional}</p> <p>${qtdtradicional}</p> <p>${saborpremium}</p> <p> ${qtdpremium} <h3> Valor do Doce: R$${soma_doce}</h3>`;
+    });
+  </script>
+</body>
 
-        produtos.innerHTML = `<p>${tamanhoescolhido}</p> <p>${massaescolhida}</p> <p>${recheioescolhido}</p> <p> ${coberturaescolhida} <h3> Valor do Pedido: R$${soma}</h3>`;
-      });
-    </script>
-  </body>
 </html>
