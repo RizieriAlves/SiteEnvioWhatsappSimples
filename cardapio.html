@@ -397,7 +397,8 @@
     let resumobolowpp = ``
     const formbolo = document.getElementById("formbolo");
     const formdoce = document.getElementById("formdoce");
-
+    let cssdoce = document.getElementById("css_doce_resumo")
+    let resumo_bolo = document.getElementById("resumobolo");
     
     function bolo() {
       let bolo = document.getElementById("showbolo");
@@ -469,10 +470,10 @@
 
     }
 
-
+    
     formbolo.addEventListener("change", function () {
       
-      let resumo_bolo = document.getElementById("resumobolo");
+      
       let radiostamanhos = document.querySelectorAll(
         '#formbolo input[name="tamanho"]'
       );
@@ -564,10 +565,14 @@
 
 
     });
-
+    function limpadiv(){
+      cssdoce.style.display = "none"
+      divsoma.style.display = "none"
+      resumo_bolo.style.display = "none"
+      resumo_doce.style.display = "none"
+    }
     formdoce.addEventListener("change", function () {
-
-      let cssdoce = document.getElementById("css_doce_resumo")
+      cssdoce = document.getElementById("css_doce_resumo")
       let resumo_doce = document.getElementById("resumodoce")
       let radiossaborestrad = document.querySelectorAll(
         '#formdoce input[name="sabortradicional"]'
