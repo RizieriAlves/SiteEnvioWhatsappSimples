@@ -98,7 +98,7 @@
       <button onclick="doce()">Doces</button>
       <button onclick="boloedoce()">Bolos e Doces</button>
     </div>
-    <div class="containerform">
+    <div class="containerform" id="containerform">
       <div class="bolo" id="showbolo">
         <form id="formbolo">
           <h2 class="mont title">Monte seu bolo</h2>
@@ -398,17 +398,21 @@
     const formbolo = document.getElementById("formbolo");
     const formdoce = document.getElementById("formdoce");
     let cssdoce = document.getElementById("css_doce_resumo")
+    let cssbolo = document.getElementById("css_bolo_resumo")
     let resumo_bolo = document.getElementById("resumobolo");
     let resumo_doce = document.getElementById("resumodoce")
-
-    function limpadiv(){
+    const width =  window.innerWidth
+    function limpadiv() {
       cssdoce.style.display = "none"
+      cssbolo.style.display = "none"
+      resumo_bolo.innerHTML = null
+      resumo_doce.innerHTML = null
       divsoma.style.display = "none"
-      resumo_bolo.style.display = "none"
-      resumo_doce.style.display = "none"
     }
 
+
     function bolo() {
+      limpadiv()
       let bolo = document.getElementById("showbolo");
       bolo.style.display = "block";
       bolo.style.margin = "auto";
@@ -430,10 +434,14 @@
       Enviowpp.href = 'cardapio.html'
     }
     function boloedoce() {
+      limpadiv()
+      //Resolução PC
 
       let bolo = document.getElementById("showbolo");
-      bolo.style.width = "46vw";
       bolo.style.display = "block";
+      
+  
+      bolo.style.width = "46vw";
       bolo.style.margin = "10px 10px 10px 2vw";
 
       let doce = document.getElementById("showdoce");
@@ -452,7 +460,9 @@
       Enviowpp.href = 'cardapio.html'
     }
 
+
     function doce() {
+      limpadiv()
       let doce = document.getElementById("showdoce");
       doce.style.display = "block";
       doce.style.margin = "auto";
@@ -467,8 +477,7 @@
       let resumopedido = document.getElementById("resumopedido");
       resumopedido.style.display = "block";
 
-      let resumobolo = document.getElementById("css_bolo_resumo")
-      resumobolo.style.display = "none"
+      cssbolo.style.display = "none"
 
       divsoma.style.display = "none"
       showsoma = 0
@@ -478,10 +487,10 @@
 
     }
 
-    
+
     formbolo.addEventListener("change", function () {
-      
-      resumo_bolo = document.getElementById("resumobolo");
+
+
       let radiostamanhos = document.querySelectorAll(
         '#formbolo input[name="tamanho"]'
       );
@@ -544,7 +553,7 @@
 
         //Mostra resumo do bolo
 
-        let cssbolo = document.getElementById("css_bolo_resumo")
+        cssbolo = document.getElementById("css_bolo_resumo")
         cssbolo.style.display = "block"
 
         resumo_bolo.innerHTML = `<div><p>${tamanhoescolhido}</p> <p>${massaescolhida}</p> <p>${recheioescolhido}</p> <p> ${coberturaescolhida} </div><h3> Valor do Bolo: R$${soma_bolo}</h3>`;
@@ -573,10 +582,10 @@
 
 
     });
-    
+
     formdoce.addEventListener("change", function () {
       cssdoce = document.getElementById("css_doce_resumo")
-      resumo_doce = document.getElementById("resumodoce")
+
       let radiossaborestrad = document.querySelectorAll(
         '#formdoce input[name="sabortradicional"]'
       );
@@ -598,37 +607,37 @@
       for (let i = 0; i < radiossaborestrad.length; i++) {
         if (radiossaborestrad[i].checked) {
           let labelsabortrad = radiossaborestrad[i];
-          sabortradicional = "Sabor " + labelsabortrad.id;
+          sabortradicional = "•Sabor " + labelsabortrad.id;
         }
       }
       for (let i = 0; i < radiosqtdtrad.length; i++) {
         if (radiosqtdtrad[i].checked) {
           let labelqtdtrad = radiosqtdtrad[i];
-          qtdtradicional += "Quantidade " + labelqtdtrad.id;
+          qtdtradicional += "•" + labelqtdtrad.id;
           soma_doce += parseInt(radiosqtdtrad[i].value);
         }
       }
       for (let i = 0; i < radiossaborespremium.length; i++) {
         if (radiossaborespremium[i].checked) {
           let labelsaborpremium = radiossaborespremium[i];
-          saborpremium += "Sabor " + labelsaborpremium.id;
+          saborpremium += "•Sabor " + labelsaborpremium.id;
         }
       }
       for (let i = 0; i < radiosqtdpremium.length; i++) {
         if (radiosqtdpremium[i].checked) {
           let labelqtdpremium = radiosqtdpremium[i];
-          qtdpremium = "Quantidade " + labelqtdpremium.id;
+          qtdpremium = "•" + labelqtdpremium.id;
           soma_doce += parseInt(radiosqtdpremium[i].value);
         }
       }
       cssdoce.style.display = "block"
 
       //Cria resumo Doce
-      resumo_doce.innerHTML = `<div><p>${sabortradicional}</p> <p>${qtdtradicional}</p> <p>${saborpremium}</p> <p> ${qtdpremium} </div> <h3> Valor do Doce: R$${soma_doce}</h3>`;
+      resumo_doce.innerHTML = `<div><p>${sabortradicional}</p> <p>${qtdtradicional}</p> <p>${saborpremium}</p> <p>${qtdpremium} </div> <h3> Valor do Doce: R$${soma_doce}</h3>`;
       soma = soma_bolo + soma_doce
 
       //Resumo doce para whatsapp
-      resumodocewpp = `\n•${sabortradicional}\n•${qtdtradicional}\n•${saborpremium}\n•${qtdpremium}\n\n*Valor dos doces: R$${soma_doce}*`
+      resumodocewpp = `\n${sabortradicional}\n${qtdtradicional}\n${saborpremium}\n${qtdpremium}\n\n*Valor dos doces: R$${soma_doce}*`
 
       //Bolo + Doce
       if (showsoma == 1) {

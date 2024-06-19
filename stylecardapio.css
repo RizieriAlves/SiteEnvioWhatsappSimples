@@ -6,11 +6,15 @@
 :root {
   --redvelvet: #800000;
 }
+
+
+
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  width: 100%;
 }
 
 h1 {
@@ -449,3 +453,73 @@ a{
   background-color: bisque;
 }
 
+@media screen and (max-width: 1400px) {
+  
+.containerform{
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+}
+@media screen and (max-width: 1200px) {
+
+  #showbolo, #showdoce{
+    width: 80vw;
+  }
+
+  main{
+    width: 100vw;
+    margin: auto;
+  }
+  .cssresumo{
+    padding: 5px;
+    min-width: 0px;
+  }
+
+  #soma{
+    width: 70%;
+  }
+  label, label p {
+    font-size: 20px;
+  }
+  p{
+    padding: 3px;
+  }
+.cb div{
+  font-size: 20px;
+}
+  
+}
+
+@media screen and (max-width:500px){
+
+  ul li{
+    font-size: 20px;
+  }
+
+  header ul {
+    margin-right: 0.5vw;
+}
+
+header ul a {
+  padding: 7px;
+  
+}
+
+.logo{
+  width: 100px;
+}
+
+
+#exception{
+  font-size: 15px;
+}
+
+header{
+  justify-content: space-evenly;
+  gap: 10px
+}
+
+}
