@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -102,3 +103,73 @@ footer {
   width: 100vw;
 }
 
+
+@media screen and (max-width:1050px){
+  ul a li {
+    font-size: 45px;
+  }
+}
+
+
+
+@media screen and (max-width:860px){
+
+  header ul a {
+    padding: 10px;
+  }
+
+  ul a li {
+    font-size: 45px;
+  }
+
+.logo{
+  margin-left: 0;
+}
+}
+@media screen and (max-width:730px){
+  ul a li {
+    font-size: 40px;
+  }
+
+header ul {
+  margin-right: 0;
+}
+}
+
+@media screen and (max-width:640px){
+  ul a li {
+    font-size: 30px;
+  }
+
+  .logo{
+    width: 150px;
+  }
+
+  .main_content{
+    padding: 20px;
+  }
+
+}
+
+@media screen and (max-width:500px){
+
+  ul a li {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  header ul a {
+    padding: 8px;
+  }
+
+  ul{
+    flex-direction: column;
+    width: 250px;
+  }
+
+  .maincta{
+    flex-direction: column;
+  }
+
+
+}

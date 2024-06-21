@@ -25,10 +25,9 @@ main a {
 }
 
 .maincta {
-  height: 50vh;
-  margin: auto;
+  min-height: 50vh;
+  margin: 35px auto ;
   border-radius: 50px;
-  margin-bottom: 30px;
 }
 
 .main_content {
@@ -44,7 +43,8 @@ main a {
 }
 .img {
   width: 15vw;
-  min-width: 15vw;
+  min-width: 200px;
+  min-height: 200px;
   height: 15vw;
 }
 
@@ -70,4 +70,5 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+
 

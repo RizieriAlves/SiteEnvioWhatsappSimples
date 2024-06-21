@@ -465,6 +465,17 @@ a{
 }
 @media screen and (max-width: 1200px) {
 
+  main{
+    width: 100vw;
+    margin: auto;
+    border-radius: 0px;
+  }
+
+  label, label p {
+    font-size: 20px;
+  }
+
+  
   #showbolo, #showdoce{
     width: 80vw;
   }
@@ -481,9 +492,7 @@ a{
   #soma{
     width: 70%;
   }
-  label, label p {
-    font-size: 20px;
-  }
+  
   p{
     padding: 3px;
   }
@@ -499,27 +508,9 @@ a{
     font-size: 20px;
   }
 
-  header ul {
-    margin-right: 0.5vw;
-}
-
-header ul a {
-  padding: 7px;
   
-}
-
-.logo{
-  width: 100px;
-}
-
-
 #exception{
   font-size: 15px;
-}
-
-header{
-  justify-content: space-evenly;
-  gap: 10px
 }
 
 }
