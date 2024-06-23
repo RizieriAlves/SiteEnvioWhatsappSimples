@@ -13,6 +13,7 @@ h1 {
     margin: 10px;
 }
 
+/* Flexbox feedbacks */
 section {
     width: 100%;
     height: 100%;
@@ -21,9 +22,9 @@ section {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-
+/* Definindo flexitens */
 section article {
-    min-height: 58vh;
+    min-height: 65vh;
     max-height: 100%;
     min-width: 320px;
     width: 30vw;
@@ -37,22 +38,45 @@ section article {
     margin-bottom: 20px;
 }
 
-
+/* Div tamanho da imagem */
 .div_img {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.img {
-    min-width: 300px;
-    min-height: 300px;
-    max-width: 400px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    min-width: 400px;
+    min-height: 400px;
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.img1 {
+    background-image: url(images/feedback\ img1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img2 {
+    background-image: url(images/feedback\ img2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img3 {
+    background-image: url(images/feedback\ img3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Mensagem de feedback */
 .div_msg {
     flex-grow: 1;
     display: flex;
@@ -66,4 +90,27 @@ section article {
     font-size: 20px;
     background-color: rgb(241, 238, 238);
 }
+/* Responsividade */
+@media screen and (max-width:1400px) {
+    section article {
+        width: 48vw;
+    }
 
+}
+
+@media screen and (max-width:900px) {
+    section article {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .div_img {
+       min-width: 300px;
+       min-height: 300px;
+    }
+    .div_msg{
+        width: 100%;
+    }
+}

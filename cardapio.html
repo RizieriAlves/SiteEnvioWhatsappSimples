@@ -103,127 +103,127 @@
       <div class="bolo" id="showbolo">
         <form id="formbolo">
           <h2 class="gwen title">Monte seu bolo</h2>
-          <div class="container">
-            <div class="cb" id="cabecalho">
-              <div>Tamanhos</div>
-              <div>Massas</div>
-              <div>Recheios</div>
-              <div>Coberturas</div>
+
+          <div class="cb" id="cabecalho">
+            <div>Tamanhos</div>
+            <div>Massas</div>
+            <div>Recheios</div>
+            <div>Coberturas</div>
+          </div>
+          <div class="flex">
+            <div class="tamanhos">
+              <div>
+                <label for="Pequeno"><input type="radio" value="150" name="tamanho" id="Pequeno" />Pequeno
+                  <p>R$ 150,00</p>
+                </label>
+              </div>
+              <div>
+                <label for="Médio"><input type="radio" value="210" name="tamanho" id="Médio" />Médio
+                  <p>R$ 210,00</p>
+                </label>
+              </div>
+              <div>
+                <label for="Grande"><input type="radio" value="260" name="tamanho" id="Grande" />Grande
+                  <p>R$ 260,00</p>
+                </label>
+              </div>
             </div>
-            <div class="flex">
-              <div class="tamanhos">
-                <div>
-                  <label for="Pequeno"><input type="radio" value="150" name="tamanho" id="Pequeno" />Pequeno
-                    <p>R$ 150,00</p>
-                  </label>
-                </div>
-                <div>
-                  <label for="Médio"><input type="radio" value="210" name="tamanho" id="Médio" />Médio
-                    <p>R$ 210,00</p>
-                  </label>
-                </div>
-                <div>
-                  <label for="Grande"><input type="radio" value="260" name="tamanho" id="Grande" />Grande
-                    <p>R$ 260,00</p>
-                  </label>
-                </div>
+            <div class="massas">
+              <div>
+                <label for="Branca"><input type="radio" name="massa" id="Branca" />Branca</label>
               </div>
-              <div class="massas">
-                <div>
-                  <label for="Branca"><input type="radio" name="massa" id="Branca" />Branca</label>
-                </div>
-                <div>
-                  <label for="Cacau"><input type="radio" name="massa" id="Cacau" />Cacau</label>
-                </div>
-                <div>
-                  <label for="Red Velvet"><input type="radio" name="massa" id="Red Velvet" />Red
-                    Velvet</label>
-                </div>
-                <div>
-                  <label for="Cenoura"><input type="radio" name="massa" id="Cenoura" />Cenoura</label>
-                </div>
+              <div>
+                <label for="Cacau"><input type="radio" name="massa" id="Cacau" />Cacau</label>
               </div>
-              <div class="recheios">
-                <div>
-                  <label for="Ao leite"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                      id="Ao leite" />Ao Leite</label>
-                </div>
-                <div>
-                  <label for="Meio Amargo"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                      id="Meio Amargo" />Meio Amargo</label>
-                </div>
-                <div>
-                  <label for="Maracuja"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                      id="Maracuja" />Maracujá</label>
-                </div>
-                <div>
-                  <label for="Nutella"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                      id="Nutella" />Nutella</label>
-                </div>
-                <div>
-                  <label for="Branco"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                      id="Branco" />Branco</label>
-                </div>
-                <div>
-                  <label for="Beijinho"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                      id="Beijinho" />Beijinho</label>
-                </div>
-                <div>
-                  <label for="Doce de Leite"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                      id="Doce de Leite" />Doce de
-                    Leite</label>
-                </div>
-                <div>
-                  <label for="Ninho"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                      id="Ninho" />Ninho</label>
-                </div>
-                <div id="exception">Recheios Premium</div>
-                <div>
-                  <label for="Brigadeiro Nozes"><input type="radio" data-valorp="20" data-valormg="30" name="recheio"
-                      id="Brigadeiro Nozes" />Brigadeiro Nozes
-                    <p>P R$20,00</p>
-                    <p>M/G R$30</p>
-                  </label>
-                </div>
-                <div>
-                  <label for="Geleia de Morango"><input type="radio" data-valorp="20" data-valormg="30" name="recheio"
-                      id="Geleia de Morango" />Geleia de Morango
-                    <p>P R$20,00</p>
-                    <p>M/G R$30</p>
-                  </label>
-                </div>
-                <div>
-                  <label for="Geleia de Frutas Vermelhas"><input type="radio" data-valorp="20" data-valormg="30"
-                      name="recheio" id="Geleia de Frutas Vermelhas" />Geleia de Frutas vermelhas
-                    <p>P R$20,00</p>
-                    <p>M/G R$30</p>
-                  </label>
-                </div>
+              <div>
+                <label for="Red Velvet"><input type="radio" name="massa" id="Red Velvet" />Red
+                  Velvet</label>
               </div>
-              <div class="coberturas">
-                <div>
-                  <label for="Cobertura"><input type="radio" value="0" name="cobertura" id="Cobertura" />
-                    <p>Cobertura</p>
-                  </label>
-                </div>
-                <div>
-                  <label for="Ganache"><input type="radio" value="0" name="cobertura" id="Ganache" />
-                    <p>Ganache</p>
-                  </label>
-                </div>
-                <div>
-                  <label for="Chantininho"><input type="radio" value="0" name="cobertura" id="Chantininho" />
-                    <p>Chantininho</p>
-                  </label>
-                </div>
-                <div>
-                  <label for="Brigadeiro"><input type="radio" value="0" name="cobertura" id="Brigadeiro" />
-                    <p>Brigadeiro</p>
-                  </label>
-                </div>
+              <div>
+                <label for="Cenoura"><input type="radio" name="massa" id="Cenoura" />Cenoura</label>
+              </div>
+            </div>
+            <div class="recheios">
+              <div>
+                <label for="Ao leite"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                    id="Ao leite" />Ao Leite</label>
+              </div>
+              <div>
+                <label for="Meio Amargo"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                    id="Meio Amargo" />Meio Amargo</label>
+              </div>
+              <div>
+                <label for="Maracuja"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                    id="Maracuja" />Maracujá</label>
+              </div>
+              <div>
+                <label for="Nutella"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                    id="Nutella" />Nutella</label>
+              </div>
+              <div>
+                <label for="Branco"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                    id="Branco" />Branco</label>
+              </div>
+              <div>
+                <label for="Beijinho"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                    id="Beijinho" />Beijinho</label>
+              </div>
+              <div>
+                <label for="Doce de Leite"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                    id="Doce de Leite" />Doce de
+                  Leite</label>
+              </div>
+              <div>
+                <label for="Ninho"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                    id="Ninho" />Ninho</label>
+              </div>
+              <div id="exception">Recheios Premium</div>
+              <div>
+                <label for="Brigadeiro Nozes"><input type="radio" data-valorp="20" data-valormg="30" name="recheio"
+                    id="Brigadeiro Nozes" />Brigadeiro Nozes
+                  <p>P R$20,00</p>
+                  <p>M/G R$30</p>
+                </label>
+              </div>
+              <div>
+                <label for="Geleia de Morango"><input type="radio" data-valorp="20" data-valormg="30" name="recheio"
+                    id="Geleia de Morango" />Geleia de Morango
+                  <p>P R$20,00</p>
+                  <p>M/G R$30</p>
+                </label>
+              </div>
+              <div>
+                <label for="Geleia de Frutas Vermelhas"><input type="radio" data-valorp="20" data-valormg="30"
+                    name="recheio" id="Geleia de Frutas Vermelhas" />Geleia de Frutas vermelhas
+                  <p>P R$20,00</p>
+                  <p>M/G R$30</p>
+                </label>
+              </div>
+            </div>
+            <div class="coberturas">
+              <div>
+                <label for="Cobertura"><input type="radio" value="0" name="cobertura" id="Cobertura" />
+                  <p>Cobertura</p>
+                </label>
+              </div>
+              <div>
+                <label for="Ganache"><input type="radio" value="0" name="cobertura" id="Ganache" />
+                  <p>Ganache</p>
+                </label>
+              </div>
+              <div>
+                <label for="Chantininho"><input type="radio" value="0" name="cobertura" id="Chantininho" />
+                  <p>Chantininho</p>
+                </label>
+              </div>
+              <div>
+                <label for="Brigadeiro"><input type="radio" value="0" name="cobertura" id="Brigadeiro" />
+                  <p>Brigadeiro</p>
+                </label>
               </div>
             </div>
           </div>
+          <div><input type="reset" value="Limpar" class="limpar" onclick="limpabolo()"></div>
         </form>
       </div>
 
@@ -333,7 +333,7 @@
               </div>
 
             </div>
-            <div><input type="reset" value="Limpar" class="limpar" onclick="limpadiv()"></div>
+            <div><input type="reset" value="Limpar" class="limpar" onclick="limpadoce()"></div>
           </div>
 
       </div>
@@ -371,7 +371,6 @@
     </button>
   </div>
 
-
   <footer>Desenvolvido por @rizierialves
     <p><a href="https://www.flaticon.com/free-icons/" title="cake icons">Get Icons</a></p>
   </footer>
@@ -402,18 +401,37 @@
     let cssbolo = document.getElementById("css_bolo_resumo")
     let resumo_bolo = document.getElementById("resumobolo");
     let resumo_doce = document.getElementById("resumodoce")
-    const width =  window.innerWidth
-    function limpadiv() {
-      cssdoce.style.display = "none"
+
+    //Ao limpar algum formulário, zerar resumo, msg para whatsapp e recalcula valores.
+    function limpabolo() {
       cssbolo.style.display = "none"
       resumo_bolo.innerHTML = null
-      resumo_doce.innerHTML = null
-      divsoma.style.display = "none"
+      soma_bolo = 0
+      resumobolowpp = ``
+      calctotal()
     }
-
-
+    function limpadoce() {
+      cssdoce.style.display = "none"
+      resumo_doce.innerHTML = null
+      soma_doce = 0
+      resumodocewpp = ``
+      calctotal()
+    }
+    function limpadiv() {
+      cssdoce.style.display = "none"
+      resumo_doce.innerHTML = null
+      cssbolo.style.display = "none"
+      resumo_bolo.innerHTML = null
+      divsoma.style.display = "none"
+      soma = 0
+      resumobolowpp = ``
+      resumobolowpp = ``
+      calctotal()
+    }
+    // Mostra formulários e define showsoma
     function bolo() {
       limpadiv()
+      showsoma = 1
       let bolo = document.getElementById("showbolo");
       bolo.style.display = "block";
       bolo.style.margin = "auto";
@@ -429,41 +447,13 @@
       let resumodoce = document.getElementById("css_doce_resumo")
       resumodoce.style.display = "none"
       divsoma.style.display = "none"
-      showsoma = 0
       formdoce.reset()
       formbolo.reset()
       Enviowpp.href = 'cardapio.html'
     }
-    function boloedoce() {
-      limpadiv()
-      //Resolução PC
-
-      let bolo = document.getElementById("showbolo");
-      bolo.style.display = "block";
-      
-  
-      bolo.style.width = "46vw";
-      bolo.style.margin = "10px 10px 10px 2vw";
-
-      let doce = document.getElementById("showdoce");
-      doce.style.width = "46vw";
-      doce.style.display = "block";
-      doce.style.margin = "10px 10px 10px 2vw";
-
-      let pedir = document.getElementById("fazerpedido");
-      pedir.style.display = "block";
-
-      let resumopedido = document.getElementById("resumopedido");
-      resumopedido.style.display = "block";
-      showsoma = 1
-      formdoce.reset()
-      formbolo.reset()
-      Enviowpp.href = 'cardapio.html'
-    }
-
-
     function doce() {
       limpadiv()
+      showsoma = 2
       let doce = document.getElementById("showdoce");
       doce.style.display = "block";
       doce.style.margin = "auto";
@@ -481,17 +471,53 @@
       cssbolo.style.display = "none"
 
       divsoma.style.display = "none"
-      showsoma = 0
+
       formdoce.reset()
       formbolo.reset()
       Enviowpp.href = 'cardapio.html'
 
     }
+    function boloedoce() {
+      limpadiv()
+      //Resolução PC
+      showsoma = 3
+      let bolo = document.getElementById("showbolo");
+      bolo.style.display = "block";
 
 
+      bolo.style.width = "46vw";
+      bolo.style.margin = "10px 10px 10px 2vw";
+
+      let doce = document.getElementById("showdoce");
+      doce.style.width = "46vw";
+      doce.style.display = "block";
+      doce.style.margin = "10px 10px 10px 2vw";
+
+      let pedir = document.getElementById("fazerpedido");
+      pedir.style.display = "block";
+
+      let resumopedido = document.getElementById("resumopedido");
+      resumopedido.style.display = "block";
+
+      formdoce.reset()
+      formbolo.reset()
+      Enviowpp.href = 'cardapio.html'
+    }
+
+    //Quando algum elemento for clicado, chama as funções para calculo e formatação da mensagem whatsapp
     formbolo.addEventListener("change", function () {
+      //Calcula, mostra resumo do bolo e dentro da calctotal já define o valor e msg do wpp
+      calcbolo()
+      calctotal()
+    });
 
+    formdoce.addEventListener("change", function () {
+      calcdoce()
+      calctotal()
+    });
 
+    function calcbolo() {
+      //Captura os inputs
       let radiostamanhos = document.querySelectorAll(
         '#formbolo input[name="tamanho"]'
       );
@@ -504,12 +530,15 @@
       let radioscoberturas = document.querySelectorAll(
         '#formbolo input[name="cobertura"]'
       );
+      //Cria variáveis
       tamanhoescolhido = "";
       massaescolhida = "";
       recheioescolhido = "";
       tamanho = 0;
       coberturaescolhida = "";
       soma_bolo = 0
+
+      //Passa em cada name do input e verifica valor
       for (let i = 0; i < radiostamanhos.length; i++) {
         if (radiostamanhos[i].checked) {
           let labeltamanho = radiostamanhos[i];
@@ -551,42 +580,21 @@
             soma_bolo += parseInt(radiosrecheios[i].getAttribute("data-valormg"));
           }
         }
-
-        //Mostra resumo do bolo
-
-        cssbolo = document.getElementById("css_bolo_resumo")
-        cssbolo.style.display = "block"
-
-        resumo_bolo.innerHTML = `<div><p>${tamanhoescolhido}</p> <p>${massaescolhida}</p> <p>${recheioescolhido}</p> <p> ${coberturaescolhida} </div><h3> Valor do Bolo: R$${soma_bolo}</h3>`;
-
-        soma = soma_bolo + soma_doce
-
-        //Cria mensagem para whatsapp e mostra valor total se for selecionado Bolos e Doces.
-
-        //Resumo do Bolo
-        resumobolowpp = `\n${tamanhoescolhido}\n${massaescolhida} \n${recheioescolhido} \n${coberturaescolhida}\n\n *Valor do bolo:R$${soma_bolo},00*`
-
-        //Bolo + Doce
-        if (showsoma == 1) {
-          divsoma.style.display = "block"
-          divsoma.innerHTML = `<h4> Valor total R$${soma}</h4>`
-          let soma_wpp = `R$${soma}`
-          let mensagem = encodeURIComponent(`🎂 *Olá, simulei um pedido em seu site*🧁 \n Gostaria de prosseguir com a encomenda\n\n Produtos selecionados:\n${resumobolowpp}\n${resumodocewpp}\n\n *Valor total: ${soma_wpp}*`)
-          Enviowpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + mensagem
-        }
-        //Apenas Bolo
-        else {
-          mensagem = encodeURIComponent(`🎂 *Olá, simulei um pedido em seu site*🎂\n Gostaria de prosseguir com a encomenda\n \nProdutos selecionados: \n ${resumobolowpp}`)
-          Enviowpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + mensagem
-        }
       }
 
 
-    });
+      //Mostra resumo do bolo
+      cssbolo = document.getElementById("css_bolo_resumo")
+      cssbolo.style.display = "block"
 
-    formdoce.addEventListener("change", function () {
-      cssdoce = document.getElementById("css_doce_resumo")
+      resumo_bolo.innerHTML = `<div><p>${tamanhoescolhido}</p> <p>${massaescolhida}</p> <p>${recheioescolhido}</p> <p> ${coberturaescolhida} </div><h3> Valor do Bolo: R$${soma_bolo}</h3>`;
 
+
+      //Resumo do Bolo
+      resumobolowpp = `\n${tamanhoescolhido}\n${massaescolhida} \n${recheioescolhido} \n${coberturaescolhida}\n\n *Valor do bolo:R$${soma_bolo},00*`
+    }
+    function calcdoce() {
+      //Captura os inputs
       let radiossaborestrad = document.querySelectorAll(
         '#formdoce input[name="sabortradicional"]'
       );
@@ -605,6 +613,8 @@
       saborpremium = "";
       qtdpremium = "";
       soma_doce = 0;
+
+      //Passa em cada um capturando valores
       for (let i = 0; i < radiossaborestrad.length; i++) {
         if (radiossaborestrad[i].checked) {
           let labelsabortrad = radiossaborestrad[i];
@@ -614,20 +624,20 @@
       for (let i = 0; i < radiosqtdtrad.length; i++) {
         if (radiosqtdtrad[i].checked) {
           let labelqtdtrad = radiosqtdtrad[i];
-          qtdtradicional += "•" + labelqtdtrad.id;
+          qtdtradicional += "\n•" + labelqtdtrad.id;
           soma_doce += parseInt(radiosqtdtrad[i].value);
         }
       }
       for (let i = 0; i < radiossaborespremium.length; i++) {
         if (radiossaborespremium[i].checked) {
           let labelsaborpremium = radiossaborespremium[i];
-          saborpremium += "•Sabor " + labelsaborpremium.id;
+          saborpremium += "\n•Sabor " + labelsaborpremium.id;
         }
       }
       for (let i = 0; i < radiosqtdpremium.length; i++) {
         if (radiosqtdpremium[i].checked) {
           let labelqtdpremium = radiosqtdpremium[i];
-          qtdpremium = "•" + labelqtdpremium.id;
+          qtdpremium = "\n•" + labelqtdpremium.id;
           soma_doce += parseInt(radiosqtdpremium[i].value);
         }
       }
@@ -635,27 +645,52 @@
 
       //Cria resumo Doce
       resumo_doce.innerHTML = `<div><p>${sabortradicional}</p> <p>${qtdtradicional}</p> <p>${saborpremium}</p> <p>${qtdpremium} </div> <h3> Valor do Doce: R$${soma_doce}</h3>`;
-      soma = soma_bolo + soma_doce
 
       //Resumo doce para whatsapp
-      resumodocewpp = `\n${sabortradicional}\n${qtdtradicional}\n${saborpremium}\n${qtdpremium}\n\n*Valor dos doces: R$${soma_doce}*`
-
-      //Bolo + Doce
+      resumodocewpp = `Brigadeiros:\n${sabortradicional}${qtdtradicional}${saborpremium}${qtdpremium}\n\n*Valor dos doces: R$${soma_doce}*`
+    }
+    //Caso Bolos + doces esteja selecionado, showsoma estará igual a 3. Abaixo realiza o calculo final e chama a criação da mensagem no whatsapp.
+    function calctotal() {
+      //Apenas Bolo
       if (showsoma == 1) {
+        soma = soma_bolo + soma_doce
+        divsoma.innerHTML = `<h4> Valor total R$${soma}</h4>`
+        msgwpp(1)
+      }
+      if (showsoma == 2) {
+        soma = soma_bolo + soma_doce
+        divsoma.innerHTML = `<h4> Valor total R$${soma}</h4>`
+        msgwpp(2)
+      }
+      //Bolo + Doce
+      if (showsoma == 3) {
+        soma = soma_bolo + soma_doce
         divsoma.style.display = "block"
         divsoma.innerHTML = `<h4> Valor total R$${soma}</h4>`
-        let soma_wpp = `R$${soma}`
-        let mensagem = encodeURIComponent(`🎂 *Olá, simulei um pedido em seu site*🧁 \n Gostaria de prosseguir com a encomenda\n\n Produtos selecionados:\n${resumobolowpp}\n${resumodocewpp}\n\n *Valor total: ${soma_wpp}*`)
-        Enviowpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + mensagem
+        msgwpp(3)
       }
 
-      //Apenas Doce
-      else {
-        mensagem = encodeURIComponent(`🧁 *Olá, simulei um pedido em seu site*🧁\n Gostaria de prosseguir com a encomenda\n Produtos selecionados: \n ${resumodocewpp}`)
+    }
+    function msgwpp(x) {
+      if (x == 1) {
+        mensagem = encodeURIComponent(`🧁 *Olá, simulei um pedido em seu site*🧁\n Gostaria de prosseguir com a encomenda\n Produtos selecionados:\n${resumobolowpp}`)
         Enviowpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + mensagem
       }
-    });
+      if (x == 2) {
+        mensagem = encodeURIComponent(`🧁 *Olá, simulei um pedido em seu site*🧁\n Gostaria de prosseguir com a encomenda\n Produtos selecionados:\n \n${resumodocewpp}`)
+        Enviowpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + mensagem
+      }
+      if (x == 3) {
+        let soma_wpp = `R$${soma}`
+        mensagem = encodeURIComponent(`🎂 *Olá, simulei um pedido em seu site*🧁 \n Gostaria de prosseguir com a encomenda\n Produtos selecionados:\n${resumobolowpp}\n${resumodocewpp}\n *Valor total: ${soma_wpp}*`)
+        Enviowpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + mensagem
+      }
+    }
+  
   </script>
+
+
+
 </body>
 
 </html>
