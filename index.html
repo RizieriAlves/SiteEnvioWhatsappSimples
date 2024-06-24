@@ -28,7 +28,7 @@
         <a href="cardapio.html">
           <li>Cardápio</li>
         </a>
-        <a href="contato.html">
+        <a id="cttwpp" target="_blank">
           <li>Contato</li>
         </a>
         <a href="feedbacks.html">
@@ -57,5 +57,10 @@
       </div>
     </div>
     <footer>Desenvolvido por @rizierialves</footer>
+    <script>
+      const telefone = '5517992337463'
+      const cttwpp = document.getElementById("cttwpp")
+        cttwpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + encodeURIComponent("Olá, estava vendo seus trabalhos no site e gostaria de continuar o atendimento por aqui!😊")
+    </script>
   </body>
 </html>

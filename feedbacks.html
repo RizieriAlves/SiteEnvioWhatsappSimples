@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="stylebase.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="stylesheet" href="feedbacks.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet" />
 
-        <title>Feedbacks</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="stylebase.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="feedbacks.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <title>Feedbacks</title>
+</head>
 
 <body>
     <header>
@@ -24,7 +25,7 @@
             <a href="cardapio.html">
                 <li>Cardápio</li>
             </a>
-            <a href="contato.html">
+            <a id="cttwpp" target="_blank">
                 <li>Contato</li>
             </a>
             <a href="feedbacks.html">
@@ -36,7 +37,7 @@
     <main>
         <h1>Feedbacks</h1>
         <section>
-            
+
             <article>
 
                 <div class="div_img img1">
@@ -67,13 +68,19 @@
                 </div>
 
             </article>
-            
-            
+
+
 
         </section>
     </main>
 
     <footer>Desenvolvido por @rizierialves</footer>
+    <script>
+        const telefone = '5517992337463'
+        const cttwpp = document.getElementById("cttwpp")
+        cttwpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + encodeURIComponent("Olá, estava vendo seus trabalhos no site e gostaria de continuar o atendimento por aqui!😊")
+    </script>
 </body>
+
 
 </html>

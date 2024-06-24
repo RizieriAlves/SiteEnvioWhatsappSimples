@@ -26,7 +26,7 @@
       <a href="cardapio.html">
         <li>Cardápio</li>
       </a>
-      <a href="contato.html">
+      <a id="cttwpp" target="_blank">
         <li>Contato</li>
       </a>
       <a href="feedbacks.html">
@@ -103,243 +103,260 @@
       <div class="bolo" id="showbolo">
         <form id="formbolo">
           <h2 class="gwen title">Monte seu bolo</h2>
+          <div id="row_bolo">
+            <div class="col_row">
+              <div class="cb">Tamanhos</div>
+              <div class="tamanhos">
+                <div>
+                  <label for="Pequeno"><input type="radio" value="150" name="tamanho" id="Pequeno" />Pequeno
+                    <p>R$ 150,00</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Médio"><input type="radio" value="210" name="tamanho" id="Médio" />Médio
+                    <p>R$ 210,00</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Grande"><input type="radio" value="260" name="tamanho" id="Grande" />Grande
+                    <p>R$ 260,00</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col_row">
+              <div class="cb">Massas</div>
+              <div class="massas">
+                <div>
+                  <label for="Branca"><input type="radio" name="massa" id="Branca" />Branca</label>
+                </div>
+                <div>
+                  <label for="Cacau"><input type="radio" name="massa" id="Cacau" />Cacau</label>
+                </div>
+                <div>
+                  <label for="Red Velvet"><input type="radio" name="massa" id="Red Velvet" />Red
+                    Velvet</label>
+                </div>
+                <div>
+                  <label for="Cenoura"><input type="radio" name="massa" id="Cenoura" />Cenoura</label>
+                </div>
+              </div>
+            </div>
+            <div class="col_row">
+              <div class="cb">Recheios</div>
+              <div class="recheios">
+                <div>
+                  <label for="Ao leite"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Ao leite" />Ao
+                    Leite</label>
+                </div>
+                <div>
+                  <label for="Meio Amargo"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Meio Amargo" />Meio Amargo</label>
+                </div>
+                <div>
+                  <label for="Maracuja"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Maracuja" />Maracujá</label>
+                </div>
+                <div>
+                  <label for="Nutella"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Nutella" />Nutella</label>
+                </div>
+                <div>
+                  <label for="Branco"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Branco" />Branco</label>
+                </div>
+                <div>
+                  <label for="Beijinho"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Beijinho" />Beijinho</label>
+                </div>
+                <div>
+                  <label for="Doce de Leite"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Doce de Leite" />Doce de
+                    Leite</label>
+                </div>
+                <div>
+                  <label for="Ninho"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
+                      id="Ninho" />Ninho</label>
+                </div>
+                <div id="exception">Recheios Premium</div>
+                <div>
+                  <label for="Brigadeiro Nozes"><input type="radio" data-valorp="20" data-valormg="30" name="recheio"
+                      id="Brigadeiro Nozes" />Brigadeiro Nozes
+                    <p>P R$20,00</p>
+                    <p>M/G R$30</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Geleia de Morango"><input type="radio" data-valorp="20" data-valormg="30" name="recheio"
+                      id="Geleia de Morango" />Geleia de Morango
+                    <p>P R$20,00</p>
+                    <p>M/G R$30</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Geleia de Frutas Vermelhas"><input type="radio" data-valorp="20" data-valormg="30"
+                      name="recheio" id="Geleia de Frutas Vermelhas" />Geleia de Frutas vermelhas
+                    <p>P R$20,00</p>
+                    <p>M/G R$30</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col_row">
+              <div class="cb">Coberturas</div>
+              <div class="coberturas">
+                <div>
+                  <label for="Cobertura"><input type="radio" value="0" name="cobertura" id="Cobertura" />
+                    <p>Cobertura</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Ganache"><input type="radio" value="0" name="cobertura" id="Ganache" />
+                    <p>Ganache</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Chantininho"><input type="radio" value="0" name="cobertura" id="Chantininho" />
+                    <p>Chantininho</p>
+                  </label>
+                </div>
+                <div>
+                  <label for="Brigadeiro"><input type="radio" value="0" name="cobertura" id="Brigadeiro" />
+                    <p>Brigadeiro</p>
+                  </label>
+                </div>
 
-          <div class="cb" id="cabecalho">
-            <div>Tamanhos</div>
-            <div>Massas</div>
-            <div>Recheios</div>
-            <div>Coberturas</div>
-          </div>
-          <div class="flex">
-            <div class="tamanhos">
-              <div>
-                <label for="Pequeno"><input type="radio" value="150" name="tamanho" id="Pequeno" />Pequeno
-                  <p>R$ 150,00</p>
-                </label>
-              </div>
-              <div>
-                <label for="Médio"><input type="radio" value="210" name="tamanho" id="Médio" />Médio
-                  <p>R$ 210,00</p>
-                </label>
-              </div>
-              <div>
-                <label for="Grande"><input type="radio" value="260" name="tamanho" id="Grande" />Grande
-                  <p>R$ 260,00</p>
-                </label>
-              </div>
-            </div>
-            <div class="massas">
-              <div>
-                <label for="Branca"><input type="radio" name="massa" id="Branca" />Branca</label>
-              </div>
-              <div>
-                <label for="Cacau"><input type="radio" name="massa" id="Cacau" />Cacau</label>
-              </div>
-              <div>
-                <label for="Red Velvet"><input type="radio" name="massa" id="Red Velvet" />Red
-                  Velvet</label>
-              </div>
-              <div>
-                <label for="Cenoura"><input type="radio" name="massa" id="Cenoura" />Cenoura</label>
-              </div>
-            </div>
-            <div class="recheios">
-              <div>
-                <label for="Ao leite"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                    id="Ao leite" />Ao Leite</label>
-              </div>
-              <div>
-                <label for="Meio Amargo"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                    id="Meio Amargo" />Meio Amargo</label>
-              </div>
-              <div>
-                <label for="Maracuja"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                    id="Maracuja" />Maracujá</label>
-              </div>
-              <div>
-                <label for="Nutella"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                    id="Nutella" />Nutella</label>
-              </div>
-              <div>
-                <label for="Branco"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                    id="Branco" />Branco</label>
-              </div>
-              <div>
-                <label for="Beijinho"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                    id="Beijinho" />Beijinho</label>
-              </div>
-              <div>
-                <label for="Doce de Leite"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                    id="Doce de Leite" />Doce de
-                  Leite</label>
-              </div>
-              <div>
-                <label for="Ninho"><input type="radio" name="recheio" data-valorp="0" data-valormg="0"
-                    id="Ninho" />Ninho</label>
-              </div>
-              <div id="exception">Recheios Premium</div>
-              <div>
-                <label for="Brigadeiro Nozes"><input type="radio" data-valorp="20" data-valormg="30" name="recheio"
-                    id="Brigadeiro Nozes" />Brigadeiro Nozes
-                  <p>P R$20,00</p>
-                  <p>M/G R$30</p>
-                </label>
-              </div>
-              <div>
-                <label for="Geleia de Morango"><input type="radio" data-valorp="20" data-valormg="30" name="recheio"
-                    id="Geleia de Morango" />Geleia de Morango
-                  <p>P R$20,00</p>
-                  <p>M/G R$30</p>
-                </label>
-              </div>
-              <div>
-                <label for="Geleia de Frutas Vermelhas"><input type="radio" data-valorp="20" data-valormg="30"
-                    name="recheio" id="Geleia de Frutas Vermelhas" />Geleia de Frutas vermelhas
-                  <p>P R$20,00</p>
-                  <p>M/G R$30</p>
-                </label>
-              </div>
-            </div>
-            <div class="coberturas">
-              <div>
-                <label for="Cobertura"><input type="radio" value="0" name="cobertura" id="Cobertura" />
-                  <p>Cobertura</p>
-                </label>
-              </div>
-              <div>
-                <label for="Ganache"><input type="radio" value="0" name="cobertura" id="Ganache" />
-                  <p>Ganache</p>
-                </label>
-              </div>
-              <div>
-                <label for="Chantininho"><input type="radio" value="0" name="cobertura" id="Chantininho" />
-                  <p>Chantininho</p>
-                </label>
-              </div>
-              <div>
-                <label for="Brigadeiro"><input type="radio" value="0" name="cobertura" id="Brigadeiro" />
-                  <p>Brigadeiro</p>
-                </label>
               </div>
             </div>
           </div>
           <div><input type="reset" value="Limpar" class="limpar" onclick="limpabolo()"></div>
         </form>
       </div>
-
       <div class="doce" id="showdoce">
         <form id="formdoce">
-          <h2 class="gwen title ">Brigadeiro</h2>
-
-          <h3 class="title outline">Tradicionais</h3>
-          <div class="cbdoces">
-            <div>
-              <h3 class="title outline" style="font-size: 20px;  ">Sabores</h3>
-            </div>
-            <div>
-              <h3 class="title outline" style="font-size: 20px; ">Quantidade</h3>
-            </div>
-          </div>
-          <div class="flexcolumn">
-            <div class="flexrow">
-              <div class="doces">
-                <div><label for="docebeijinho"><input type="radio" value="0" name="sabortradicional"
-                      id="docebeijinho" />
-                    <p>Beijinho</p>
-                </div>
-                <div><label for="Morango"><input type="radio" value="0" name="sabortradicional" id="Morango" />
-                    <p>Morango</p>
-                </div>
-                <div><label for="Docinho de Ninho"><input type="radio" value="0" name="sabortradicional"
-                      id="Docinho de Ninho" />
-                    <p>Ninho</p>
-                </div>
-                <div><label for="Tradicional"><input type="radio" value="0" name="sabortradicional" id="Tradicional" />
-                    <p>Tradicional</p>
-                </div>
-              </div>
-              <div class="doces">
-                <div><label for="25 Unidades Tradicionais"><input type="radio" value="65" name="qtdtradicional"
-                      id="25 Unidades Tradicionais" /> 25 Unidades
-                    <p>R$ 65,00</p>
-                  </label>
-                </div>
+          <h2 class="gwen title">Brigadeiro</h2>
+          <div class="col_doce">
+            <h3 class="bkg outline">Tradicionais</h3>
+            <div class="row_doce">
+              <div class="col_row">
+                <h3 class="title outline" style="font-size: 20px;  ">Sabores</h3>
                 <div>
-                  <label for="50 Unidades Tradicionais"><input type="radio" value="130" name="qtdtradicional"
-                      id="50 Unidades Tradicionais" /> 50 Unidades
-                    <p>R$ 130,00</p>
-                  </label>
+                  <div class="doces">
+                    <div><label for="docebeijinho"><input type="radio" value="0" name="sabortradicional"
+                          id="docebeijinho" />
+                        <p>Beijinho</p>
+                    </div>
+                    <div><label for="Morango"><input type="radio" value="0" name="sabortradicional" id="Morango" />
+                        <p>Morango</p>
+                    </div>
+                    <div><label for="Docinho de Ninho"><input type="radio" value="0" name="sabortradicional"
+                          id="Docinho de Ninho" />
+                        <p>Ninho</p>
+                    </div>
+                    <div><label for="Tradicional"><input type="radio" value="0" name="sabortradicional"
+                          id="Tradicional" />
+                        <p>Tradicional</p>
+                    </div>
+                  </div>
+
                 </div>
-                <div>
-                  <label for="100 Unidades Tradicionais"><input type="radio" value="260" name="qtdtradicional"
-                      id="100 Unidades Tradicionais" /> 100 Unidades
-                    <p>R$ 260,00</p>
-                  </label>
+              </div>
+              <div class="col_row">
+                <h3 class="title outline" style="font-size: 20px; ">Quantidade</h3>
+                <div class="doces">
+                  <div><label for="25 Unidades Tradicionais"><input type="radio" value="65" name="qtdtradicional"
+                        id="25 Unidades Tradicionais" /> 25 Unidades
+                      <p>R$ 65,00</p>
+                    </label>
+                  </div>
+                  <div>
+                    <label for="50 Unidades Tradicionais"><input type="radio" value="130" name="qtdtradicional"
+                        id="50 Unidades Tradicionais" /> 50 Unidades
+                      <p>R$ 130,00</p>
+                    </label>
+                  </div>
+                  <div>
+                    <label for="100 Unidades Tradicionais"><input type="radio" value="260" name="qtdtradicional"
+                        id="100 Unidades Tradicionais" /> 100 Unidades
+                      <p>R$ 260,00</p>
+                    </label>
+                  </div>
                 </div>
+
+
               </div>
             </div>
-            <h3 class="title outline" style="font-size: 20px;">Sabores Premium</h3>
-            <div class="flexrow">
-              <div class="doces">
-                <div><label for="Ninho com Nutella"><input type="radio" value="0" name="saborpremium"
-                      id="Ninho com Nutella" />
-                    <p>Ninho com Nutella</p>
-                  </label></div>
-                <div><label for="Morango com Nutella"><input type="radio" value="0" name="saborpremium"
-                      id="Morango com Nutella" />
-                    <p>Morango com Nutella</p>
-                  </label></div>
-                <div><label for="Brigadeiro Meio Amargo"><input type="radio" value="0" name="saborpremium"
-                      id="Brigadeiro Meio Amargo" />
-                    <p>
-                      Meio
-                      Amargo
-                    </p>
-                  </label></div>
-                <div><label for="Branco Premium"><input type="radio" value="0" name="saborpremium"
-                      id="Branco Premium" />
-                    <p>Branco</p>
-                  </label>
-                </div>
-                <div><label for="Café com Cream Chesse"><input type="radio" value="0" name="saborpremium"
-                      id="Café com Cream Chesse" />
-                    <p>Café com Cream Cheese</p>
-                  </label></div>
-                <div><label for="Churros"><input type="radio" value="0" name="saborpremium" id="Churros" />
-                    <p>Churros</p>
-                  </label></div>
-                <div><label for="Camafeu"><input type="radio" value="0" name="saborpremium" id="Camafeu" />
-                    <p>Camafeu</p>
-                  </label></div>
-              </div>
-              <div class="doces">
-                <div><label for="25 Unidades Premium"><input type="radio" value="87" name="qtdespecial"
-                      id="25 Unidades Premium" />
-                    25 Unidades
-                    <p>R$ 87,00</p>
-                  </label>
-                </div>
-                <div><label for="50 Unidades Premium"><input type="radio" value="175" name="qtdespecial"
-                      id="50 Unidades Premium" />
-                    50 Unidades
-                    <p>R$ 175,00</p>
-                  </label>
-                </div>
-                <div><label for="100 Unidades Premium"><input type="radio" value="350" name="qtdespecial"
-                      id="100 Unidades Premium" /> 100 Unidades
-                    <p>R$ 350,00</p>
-                  </label>
-                </div>
-              </div>
+            <div>
+              <h3 class="title outline" style="font-size: 20px;">Sabores Premium</h3>
+            </div>
+            <div class="row_doce">
+              <div class="col_row">
 
+                <div class="doces">
+                  <div><label for="Ninho com Nutella"><input type="radio" value="0" name="saborpremium"
+                        id="Ninho com Nutella" />
+                      <p>Ninho com Nutella</p>
+                    </label></div>
+                  <div><label for="Morango com Nutella"><input type="radio" value="0" name="saborpremium"
+                        id="Morango com Nutella" />
+                      <p>Morango com Nutella</p>
+                    </label></div>
+                  <div><label for="Brigadeiro Meio Amargo"><input type="radio" value="0" name="saborpremium"
+                        id="Brigadeiro Meio Amargo" />
+                      <p>
+                        Meio
+                        Amargo
+                      </p>
+                    </label></div>
+                  <div><label for="Branco Premium"><input type="radio" value="0" name="saborpremium"
+                        id="Branco Premium" />
+                      <p>Branco</p>
+                    </label>
+                  </div>
+                  <div><label for="Café com Cream Chesse"><input type="radio" value="0" name="saborpremium"
+                        id="Café com Cream Chesse" />
+                      <p>Café com Cream Cheese</p>
+                    </label></div>
+                  <div><label for="Churros"><input type="radio" value="0" name="saborpremium" id="Churros" />
+                      <p>Churros</p>
+                    </label></div>
+                  <div><label for="Camafeu"><input type="radio" value="0" name="saborpremium" id="Camafeu" />
+                      <p>Camafeu</p>
+                    </label></div>
+                </div>
+              </div>
+              <div class="col_row">
+                <div class="doces">
+                  <div><label for="25 Unidades Premium"><input type="radio" value="87" name="qtdespecial"
+                        id="25 Unidades Premium" />
+                      25 Unidades
+                      <p>R$ 87,00</p>
+                    </label>
+                  </div>
+                  <div><label for="50 Unidades Premium"><input type="radio" value="175" name="qtdespecial"
+                        id="50 Unidades Premium" />
+                      50 Unidades
+                      <p>R$ 175,00</p>
+                    </label>
+                  </div>
+                  <div><label for="100 Unidades Premium"><input type="radio" value="350" name="qtdespecial"
+                        id="100 Unidades Premium" /> 100 Unidades
+                      <p>R$ 350,00</p>
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
             <div><input type="reset" value="Limpar" class="limpar" onclick="limpadoce()"></div>
           </div>
-
+        </form>
       </div>
-      </form>
+
+
     </div>
   </div>
+
   <div class="resumo" id="resumopedido">
     <h3>Resumo do Pedido</h3>
     <div class="flexresumo">
@@ -391,7 +408,7 @@
     let saborpremium = "";
     let qtdpremium = "";
     let mensagem = ""
-    const telefone = '5517997084998'
+    const telefone = '5517992337463'
     const Enviowpp = document.getElementById("enviowpp")
     let resumodocewpp = ``
     let resumobolowpp = ``
@@ -401,7 +418,8 @@
     let cssbolo = document.getElementById("css_bolo_resumo")
     let resumo_bolo = document.getElementById("resumobolo");
     let resumo_doce = document.getElementById("resumodoce")
-
+    const cttwpp = document.getElementById("cttwpp")
+    cttwpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + encodeURIComponent("Olá, estava vendo seus trabalhos no site e gostaria de continuar o atendimento por aqui!😊")
     //Ao limpar algum formulário, zerar resumo, msg para whatsapp e recalcula valores.
     function limpabolo() {
       cssbolo.style.display = "none"
@@ -431,11 +449,13 @@
     // Mostra formulários e define showsoma
     function bolo() {
       limpadiv()
+      window.addEventListener('load', janela);
+      window.addEventListener('resize', janela);
+      janela()
       showsoma = 1
       let bolo = document.getElementById("showbolo");
       bolo.style.display = "block";
       bolo.style.margin = "auto";
-      bolo.style.width = "60vw";
 
       let doce = document.getElementById("showdoce");
       doce.style.display = "none";
@@ -453,6 +473,9 @@
     }
     function doce() {
       limpadiv()
+      window.addEventListener('load', janela);
+      window.addEventListener('resize', janela);
+      janela()
       showsoma = 2
       let doce = document.getElementById("showdoce");
       doce.style.display = "block";
@@ -479,19 +502,18 @@
     }
     function boloedoce() {
       limpadiv()
+      window.addEventListener('load', janela);
+      window.addEventListener('resize', janela);
+      janela()
       //Resolução PC
       showsoma = 3
       let bolo = document.getElementById("showbolo");
       bolo.style.display = "block";
-
-
-      bolo.style.width = "46vw";
-      bolo.style.margin = "10px 10px 10px 2vw";
-
+      bolo.style.margin = "10px 10px 10px";
       let doce = document.getElementById("showdoce");
-      doce.style.width = "46vw";
+
       doce.style.display = "block";
-      doce.style.margin = "10px 10px 10px 2vw";
+      doce.style.margin = "10px 10px 10px";
 
       let pedir = document.getElementById("fazerpedido");
       pedir.style.display = "block";
@@ -686,7 +708,38 @@
         Enviowpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + mensagem
       }
     }
-  
+
+    //Responsividade 
+    window.addEventListener('load', janela);
+    window.addEventListener('resize', janela);
+    function janela() {
+      const width = window.innerWidth;
+      if (width > 1250) {
+        let bolo = document.getElementById("showbolo");
+        let doce = document.getElementById("showdoce")
+        bolo.style.width = "48vw"
+        doce.style.width = "48vw"
+      }
+      if (width < 1250) {
+        let bolo = document.getElementById("showbolo");
+        let doce = document.getElementById("showdoce")
+        bolo.style.width = "90vw"
+        doce.style.width = "90vw"
+      }
+
+      if (width < 660) {
+        let flex = document.getElementById("row_bolo")
+        flex.style.flexDirection = "column"
+      }
+
+      if (width > 660) {
+        let flex = document.getElementById("row_bolo")
+        flex.style.flexDirection = "row"
+      }
+      document.getElementById("formbolo").style.margin = "auto"
+      document.getElementById("formdoce").style.margin = "auto"
+    }
+
   </script>
 
 

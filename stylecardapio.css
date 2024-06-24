@@ -3,8 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 :root {
-  --redvelvet: #800000;
+  --redvelvet: #c03c3c;
 }
 
 
@@ -33,7 +34,6 @@ table {
 
 .bolo {
   border-radius: 10px;
-  border: 1px solid;
 }
 
 th,
@@ -48,6 +48,7 @@ th td {
   text-align: center;
   margin-bottom: 25px;
 }
+
 /* Define tamanho max dos elementos */
 main {
   background-color: white;
@@ -71,6 +72,7 @@ h3 {
   text-align: center;
   font-size: 25px;
 }
+
 /* Indicação de tamanhos */
 .tamanho {
   font-size: 50px;
@@ -87,12 +89,15 @@ h3 {
   font-size: 30px;
   color: black;
 }
+
 .indicacao {
+  margin-top: 15px;
   display: flex;
   gap: 2vw;
   text-align: center;
   justify-content: center;
 }
+
 /* O peso varia de acordo... */
 .destaque {
   margin-top: 25px;
@@ -106,6 +111,7 @@ p {
   padding: 5px;
   text-align: center;
 }
+
 /* Botão concluir pedido */
 .fazerpedido {
   padding: 10px;
@@ -135,6 +141,7 @@ button:hover {
   text-decoration: underline;
   text-decoration-color: white;
 }
+
 /* Fonte */
 .gwen {
   font-family: "Gwendolyn", cursive;
@@ -144,6 +151,11 @@ button:hover {
 
 h3 {
   text-align: center;
+}
+
+.bkg {
+  background-color: var(--redvelvet);
+  color: white;
 }
 
 /* container Botões e conf botões  */
@@ -174,48 +186,80 @@ button {
 .bolo,
 .doce {
   display: none;
+  min-width: 320px;
 }
 
 /* Segura e configura os formulários, ambos do mesmo tamanho */
-.containerform{
+.containerform {
   display: flex;
-  align-items: stretch
+  align-items: stretch;
+  justify-content: center;
 }
 
-.formbolo {
-  border-radius: 10px;
-}
 
-/* Config formdoces em coluna e  */
-#formdoce{
+#formbolo {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-#formdoce .flexcolumn{
+/* Config formdoces em coluna e  */
+#formdoce {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
-.cbdoces{
+#formdoce .flexcolumn {
+  height: 100%;
+}
+
+#row_bolo {
+  display: flex;
+  flex-grow: 1;
+}
+
+#row_bolo div {
+  width: 100%;
+}
+
+#row_bolo .col_row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.row_doce {
   display: flex;
 }
-.cbdoces div{
-  width: 50%;
+
+.row_doce div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.row_doce div div {
+  flex-grow: 1;
+}
+
+.col_doce {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.col_doce .row_doce {
+  flex-grow: 1;
 }
 
 
 /* Configuração cabeçalhos */
 .cb {
-  display: flex;
-  max-width: 100%;
-}
-.cb div {
-  padding: 0.5vw;
-  width: 25%;
   text-align: center;
-  font-size: 25px;
-  border: 1px solid;
+  max-width: 100%;
+  font-size: 30px;
 }
 
 /* Configuração de divs da coluna tamanho */
@@ -228,6 +272,7 @@ button {
   display: flex;
   flex-direction: column;
 }
+
 /* Configuração geral de tamanho das divs input*/
 .recheios,
 .tamanhos,
@@ -278,6 +323,7 @@ button {
 .doces div input {
   padding: 2vw;
 }
+
 .recheios div,
 .massas div,
 .coberturas div,
@@ -322,13 +368,13 @@ h1 {
 /* Não destaca Recheios e Sabores premium */
 #exception {
   color: white;
-  background-color: brown;
+  background-color: var(--redvelvet);
 }
 
 #exception:hover {
-  background-color: brown;
+  background-color: var(--redvelvet);
   color: white;
-  border: none;
+  outline: none;
 }
 
 /* Cria resumo do pedido */
@@ -370,41 +416,46 @@ h2 {
   flex-direction: row;
   height: 100%;
 }
-.flexrow > div{
+
+.flexrow>div {
   width: 50%;
 }
 
 /*Manter divs verticalmente agrupadas*/
-.flexcolumn{
+.flexcolumn {
   display: flex;
   flex-direction: column;
 }
-.flexcolumn div{
+
+.flexcolumn div {
   flex-grow: 1;
 }
 
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
+
 /* Limpa formulário */
-.limpar{
+.limpar {
   display: block;
   width: 100%;
   height: 100%;
   text-align: center;
   font-size: 15px;
   background-color: bisque;
+  padding: 10px;
 }
 
 /* Icones no resumo bolo e doce */
-.icon{
+.icon {
   max-width: 100px;
   padding-left: 5px;
 }
+
 /* Configura resumos lado a lado */
-.flexresumo{
+.flexresumo {
   width: fit-content;
   margin: auto;
   display: flex;
@@ -413,31 +464,34 @@ a{
 
 
 /* Css com icone e div para resumo */
-#css_bolo_resumo, #css_doce_resumo{
+#css_bolo_resumo,
+#css_doce_resumo {
   display: none;
   display: none;
   max-height: 350px;
 }
 
 /* Resumo do bolo e doce */
-.cssresumo{
+.cssresumo {
   border-radius: 50px;
   background-color: white;
   min-width: 380px;
   min-height: 250px;
   max-width: 900px;
-  height:  100%;
+  height: 100%;
   align-items: center;
   padding: 20px;
   display: flex;
   flex-direction: column;
 }
-.cssresumo div{
+
+.cssresumo div {
   flex-grow: 1;
 }
 
 /* Forma que resumo digitado será mostrado */
-#resumobolo, #resumodoce{
+#resumobolo,
+#resumodoce {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -446,7 +500,7 @@ a{
 }
 
 /* Soma bolo + doce */
-#soma{
+#soma {
   display: none;
   border-radius: 50px;
   background-color: white;
@@ -454,68 +508,100 @@ a{
   text-align: center;
   font-size: 20px;
   width: 20%;
-  margin:20px  auto ;
+  margin: 20px auto;
 }
 
 /* Responsividade */
-@media screen and (max-width: 1400px) {
-  
-.containerform{
-  flex-direction: column;
-  align-items: center;
-}
-
-
-
-}
 @media screen and (max-width: 1200px) {
 
-  main{
+  .containerform {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
     width: 100vw;
     margin: auto;
     border-radius: 0px;
   }
 
-  label, label p {
+  label,
+  label p {
     font-size: 20px;
   }
 
-  
-  #showbolo, #showdoce{
-    width: 80vw;
-  }
-
-  main{
-    width: 100vw;
-    margin: auto;
-  }
-  .cssresumo{
+  .cssresumo {
     padding: 5px;
     min-width: 0px;
   }
 
-  #soma{
+  #soma {
     width: 70%;
   }
-  
-  p{
+
+  p {
     padding: 3px;
   }
-.cb div{
-  font-size: 20px;
-}
-  
-}
 
-@media screen and (max-width:500px){
-
-  ul li{
+  .cb div {
     font-size: 20px;
   }
 
-  
-#exception{
-  font-size: 15px;
 }
+
+@media screen and (max-width:660px) {
+
+  th,
+  td {
+    font-size: 20px;
+    padding: 7px;
+  }
+
+  ul li {
+    font-size: 20px;
+  }
+
+  .flexresumo {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .btns button {
+    padding: 10px;
+  }
+
+  .fazerpedido {
+    max-width: 250px;
+    max-height: 260px;
+    padding: 0;
+  }
+
+  .imgbtn {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .indicacao {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tamanho {
+    width: 300px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width:400px) {
+
+  #formbolo,
+  #formdoce {
+    max-width: 300px;
+  }
 
 }

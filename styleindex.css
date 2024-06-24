@@ -42,14 +42,14 @@ main a {
   justify-content: space-evenly;
 }
 .img {
-  width: 15vw;
+  width: 20vw;
   min-width: 200px;
   min-height: 200px;
-  height: 15vw;
+  height: 20vw;
 }
 
 p {
-  font-size: 4em;
+  font-size: 100px;
   text-decoration: none;
   color: var(--dourado);
   text-align: center;
@@ -70,5 +70,3 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
-
-
