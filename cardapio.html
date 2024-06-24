@@ -393,6 +393,22 @@
   </footer>
 
   <script>
+    let sitewpp = "";
+    (function () {
+      function getDeviceType() {
+        const userAgent = navigator.userAgent;
+
+        if (/Mobi|Android/i.test(userAgent) || (/Tablet|iPad/i.test(userAgent))) {
+          sitewpp = "https://api.whatsapp.com/send?phone="
+        }
+        else {
+          sitewpp = "https://web.whatsapp.com/send?phone=";
+        }
+
+      }
+      getDeviceType()
+    })()
+
     let soma = 0
     let soma_bolo = 0
     let soma_doce = 0
@@ -419,7 +435,7 @@
     let resumo_bolo = document.getElementById("resumobolo");
     let resumo_doce = document.getElementById("resumodoce")
     const cttwpp = document.getElementById("cttwpp")
-    cttwpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + encodeURIComponent("Olá, estava vendo seus trabalhos no site e gostaria de continuar o atendimento por aqui!😊")
+    cttwpp.href = sitewpp + telefone + '&text=' + encodeURIComponent("Olá, estava vendo seus trabalhos no site e gostaria de continuar o atendimento por aqui!😊")
     //Ao limpar algum formulário, zerar resumo, msg para whatsapp e recalcula valores.
     function limpabolo() {
       cssbolo.style.display = "none"
@@ -609,11 +625,11 @@
       cssbolo = document.getElementById("css_bolo_resumo")
       cssbolo.style.display = "block"
 
-      resumo_bolo.innerHTML = `<div><p>${tamanhoescolhido}</p> <p>${massaescolhida}</p> <p>${recheioescolhido}</p> <p> ${coberturaescolhida} </div><h3> Valor do Bolo: R$${soma_bolo}</h3>`;
+      resumo_bolo.innerHTML = `<div><p>${tamanhoescolhido}</p> <p>${massaescolhida}</p> <p>${recheioescolhido}</p> <p> ${coberturaescolhida} </div><h3>Valor do Bolo: R$${soma_bolo}</h3>`;
 
 
       //Resumo do Bolo
-      resumobolowpp = `\n${tamanhoescolhido}\n${massaescolhida} \n${recheioescolhido} \n${coberturaescolhida}\n\n *Valor do bolo:R$${soma_bolo},00*`
+      resumobolowpp = `\n${tamanhoescolhido}\n${massaescolhida} \n${recheioescolhido} \n${coberturaescolhida}\n\n*Valor do bolo: R$${soma_bolo},00*`
     }
     function calcdoce() {
       //Captura os inputs
@@ -695,17 +711,17 @@
     }
     function msgwpp(x) {
       if (x == 1) {
-        mensagem = encodeURIComponent(`🧁 *Olá, simulei um pedido em seu site*🧁\n Gostaria de prosseguir com a encomenda\n Produtos selecionados:\n${resumobolowpp}`)
-        Enviowpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + mensagem
+        mensagem = encodeURIComponent(`🧁 *Olá, simulei um pedido em seu site*🧁\n\nProdutos selecionados:\n\n*Bolo*\n${resumobolowpp}`)
+        Enviowpp.href = sitewpp + telefone + '&text=' + mensagem
       }
       if (x == 2) {
-        mensagem = encodeURIComponent(`🧁 *Olá, simulei um pedido em seu site*🧁\n Gostaria de prosseguir com a encomenda\n Produtos selecionados:\n \n${resumodocewpp}`)
-        Enviowpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + mensagem
+        mensagem = encodeURIComponent(`🧁 *Olá, simulei um pedido em seu site*🧁\n\nProdutos selecionados:\n\n${resumodocewpp}`)
+        Enviowpp.href = sitewpp + telefone + '&text=' + mensagem
       }
       if (x == 3) {
         let soma_wpp = `R$${soma}`
-        mensagem = encodeURIComponent(`🎂 *Olá, simulei um pedido em seu site*🧁 \n Gostaria de prosseguir com a encomenda\n Produtos selecionados:\n${resumobolowpp}\n${resumodocewpp}\n *Valor total: ${soma_wpp}*`)
-        Enviowpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + mensagem
+        mensagem = encodeURIComponent(`🎂 *Olá, simulei um pedido em seu site*🧁\n\nProdutos selecionados:\n\n*Bolo:*\n${resumobolowpp}\n\n${resumodocewpp}\n\n*Valor total: ${soma_wpp}*`)
+        Enviowpp.href = sitewpp + telefone + '&text=' + mensagem
       }
     }
 

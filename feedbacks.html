@@ -76,9 +76,24 @@
 
     <footer>Desenvolvido por @rizierialves</footer>
     <script>
+        let sitewpp = "";
+        (function () {
+            function getDeviceType() {
+                const userAgent = navigator.userAgent;
+
+                if (/Mobi|Android/i.test(userAgent) || (/Tablet|iPad/i.test(userAgent))) {
+                    sitewpp = "https://api.whatsapp.com/send?phone="
+                }
+                else {
+                    sitewpp = "https://web.whatsapp.com/send?phone=";
+                }
+
+            }
+            getDeviceType()
+        })()
         const telefone = '5517992337463'
         const cttwpp = document.getElementById("cttwpp")
-        cttwpp.href = 'https://web.whatsapp.com/send?phone=' + telefone + '&text=' + encodeURIComponent("Olá, estava vendo seus trabalhos no site e gostaria de continuar o atendimento por aqui!😊")
+        cttwpp.href = sitewpp + telefone + '&text=' + encodeURIComponent("Olá, estava vendo seus trabalhos no site e gostaria de continuar o atendimento por aqui!😊")
     </script>
 </body>
 
