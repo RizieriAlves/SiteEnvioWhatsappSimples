@@ -56,24 +56,42 @@ section article {
 }
 
 .img1 {
-    background-image: url(images/feedback\ img1.png);
+    background-image: url(images/baunilha.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .img2 {
-    background-image: url(images/feedback\ img2.png);
+    background-image: url(images/feedback\ img1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
 .img3 {
-    background-image: url(images/feedback\ img3.png);
+    background-image: url(images/frutas\ vermelhas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.img4 {
+    background-image: url(images/chocolate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.img5 {
+    background-image: url(images/Redvelvet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+p{
+    font-size: 25px;
+    text-align: justify;
 }
 
 /* Mensagem de feedback */

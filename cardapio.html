@@ -21,7 +21,7 @@
 
 <body>
   <header>
-    <a href="index.html"><img src="/images/leve-me escuro.png" alt="logo.png" class="logo" /></a>
+    <a href="index.html"><img src="/images/Cake_escuro.png" alt="logo.png" class="logo" /></a>
     <ul>
       <a href="cardapio.html">
         <li>Cardápio</li>
@@ -381,10 +381,10 @@
 
     </div>
     <button class="fazerpedido" id="fazerpedido">
-      <a id="enviowpp" target="_blank">
-        <img src="images/leve-me escuro.png" alt="" class="imgbtn" />
-        <p>Fazer pedido</p>
-      </a>
+
+      <img src="images/Cake_escuro.png" alt="" class="imgbtn" />
+      <p>Fazer pedido</p>
+
     </button>
   </div>
 
@@ -424,8 +424,7 @@
     let saborpremium = "";
     let qtdpremium = "";
     let mensagem = ""
-    const telefone = '5517992337463'
-    const Enviowpp = document.getElementById("enviowpp")
+    const telefone = '5517996287444'
     let resumodocewpp = ``
     let resumobolowpp = ``
     const formbolo = document.getElementById("formbolo");
@@ -485,7 +484,7 @@
       divsoma.style.display = "none"
       formdoce.reset()
       formbolo.reset()
-      Enviowpp.href = 'cardapio.html'
+
     }
     function doce() {
       limpadiv()
@@ -513,7 +512,6 @@
 
       formdoce.reset()
       formbolo.reset()
-      Enviowpp.href = 'cardapio.html'
 
     }
     function boloedoce() {
@@ -539,7 +537,7 @@
 
       formdoce.reset()
       formbolo.reset()
-      Enviowpp.href = 'cardapio.html'
+
     }
 
     //Quando algum elemento for clicado, chama as funções para calculo e formatação da mensagem whatsapp
@@ -693,35 +691,96 @@
       if (showsoma == 1) {
         soma = soma_bolo + soma_doce
         divsoma.innerHTML = `<h4> Valor total R$${soma}</h4>`
-        msgwpp(1)
+        
       }
       if (showsoma == 2) {
         soma = soma_bolo + soma_doce
         divsoma.innerHTML = `<h4> Valor total R$${soma}</h4>`
-        msgwpp(2)
+       
       }
       //Bolo + Doce
       if (showsoma == 3) {
         soma = soma_bolo + soma_doce
         divsoma.style.display = "block"
         divsoma.innerHTML = `<h4> Valor total R$${soma}</h4>`
-        msgwpp(3)
+        
       }
 
     }
+
+
+    function isChecked(nameinput) {
+      // Pega cada name de input chamado na função acima e valida se algum está marcado, se sim retorna true
+      var inputs = document.getElementsByName(nameinput);
+      for (var i = 0; i < inputs.length; i++) {
+        if (inputs[i].checked) {
+          return true;
+        }
+      }
+      return false;
+    }
+
+    //Função para verificar se tudo foi selecionado antes de concluir o pedido
+    document.getElementById('fazerpedido').addEventListener('click', function () {
+      //Apenas bolo
+      if (showsoma == 1) {
+        // Verifica se tudo do bolo foi selecionado
+        if (isChecked('tamanho') || isChecked('massa') || isChecked('recheio') || isChecked('cobertura')) {
+          if (!isChecked('tamanho') || !isChecked('massa') || !isChecked('recheio') || !isChecked('cobertura')) {
+            alert("Escolha o tamanho, massa, recheio e cobertura do bolo")
+          }
+          else {
+            msgwpp(1);
+          }
+        }
+      }
+      // Apenas doces
+      if (showsoma == 2) {
+        if (isChecked('sabortradicional') && !isChecked('qtdtradicional') || isChecked('qtdtradicional') && !isChecked('sabortradicional') || isChecked('saborpremium') && !isChecked('qtdespecial') || isChecked('qtdespecial') && !isChecked('saborpremium')) {
+          alert('Escolha os sabores e quantidades dos brigadeiros');
+        } else {
+          msgwpp(2);
+        }
+
+      }
+      //Checa bolos e  brigadeiros.
+      if (showsoma == 3) {
+        let bolook = false
+        let doceok = false
+        if (isChecked('tamanho') || isChecked('massa') || isChecked('recheio') || isChecked('cobertura')) {
+          if (!isChecked('tamanho') || !isChecked('massa') || !isChecked('recheio') || !isChecked('cobertura')) {
+            alert("Escolha o tamanho, massa, recheio e cobertura do bolo")
+          }
+          else {
+            bolook = true
+          }
+        }
+        if (isChecked('sabortradicional') && !isChecked('qtdtradicional') || isChecked('qtdtradicional') && !isChecked('sabortradicional') || isChecked('saborpremium') && !isChecked('qtdespecial') || isChecked('qtdespecial') && !isChecked('saborpremium')) {
+          alert('Escolha os sabores e quantidades dos brigadeiros');
+        } else {
+          doceok = true
+        }
+
+        if (bolook == true && doceok == true) {
+          msgwpp(3);
+        }
+
+      }
+    });
+
     function msgwpp(x) {
       if (x == 1) {
         mensagem = encodeURIComponent(`🧁 *Olá, simulei um pedido em seu site*🧁\n\nProdutos selecionados:\n\n*Bolo*\n${resumobolowpp}`)
-        Enviowpp.href = sitewpp + telefone + '&text=' + mensagem
+        window.open(sitewpp + telefone + '&text=' + mensagem)
       }
       if (x == 2) {
         mensagem = encodeURIComponent(`🧁 *Olá, simulei um pedido em seu site*🧁\n\nProdutos selecionados:\n\n${resumodocewpp}`)
-        Enviowpp.href = sitewpp + telefone + '&text=' + mensagem
+        window.open(sitewpp + telefone + '&text=' + mensagem)
       }
       if (x == 3) {
         let soma_wpp = `R$${soma}`
         mensagem = encodeURIComponent(`🎂 *Olá, simulei um pedido em seu site*🧁\n\nProdutos selecionados:\n\n*Bolo:*\n${resumobolowpp}\n\n${resumodocewpp}\n\n*Valor total: ${soma_wpp}*`)
-        Enviowpp.href = sitewpp + telefone + '&text=' + mensagem
+        window.open(sitewpp + telefone + '&text=' + mensagem)
       }
     }
 
